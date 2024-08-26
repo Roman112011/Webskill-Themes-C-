@@ -1,0 +1,235 @@
+<html><head><title>Тема 8 ООП 2</title><meta charset="utf-8"><link rel="icon" href="../../../images/favicon.png" type="image/x-icon"><link rel='stylesheet' href='../../../styles/prism.css'><link rel='stylesheet' href='../../../styles/master.css'><link rel='stylesheet' href='styles/style.css'><script src='https://code.jquery.com/jquery-3.6.0.min.js' defer=""></script><script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js' defer=""></script><script src='../../../scripts/activate_highlight.js' defer=""></script><script src='../../../scripts/additional_content_button.js' defer=""></script></head><body><div id='templatemo_header_wrapper'>    <div id='templatemo_header'>        <div id='header'>            <br>            <h1 align='center'><a href='#' class='themeA'>Тема 8<br>Наслідування та Файли (ООП 2)</a></h1><br>        </div>    </div></div><div class='content'><div class='theme-main-container debug-compile-info-cont' align='center'><p class='theme-main-header debug-compile-info-header'>Complie info</p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>ExecutableCreationTime</span>:<br><span class='debug-compile-info-entry-value attention-code'>10/31/2023 10:59:11PM</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>ExecutableLastWriteTime</span>:<br><span class='debug-compile-info-entry-value attention-code'>10/31/2023 10:59:11PM</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>ExecutableHashSHA256</span>:<br><span class='debug-compile-info-entry-value attention-code'>3F65C0CEBC9EFBA3A2CD6EFE91470B7E1169ED793E8FE501E867C7728B0356B2</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>SettingsHashSHA256</span>:<br><span class='debug-compile-info-entry-value attention-code'>F31E1F0111D4D7CBDB818FD53E8934027CDB68F1C983CCBD5D4E8EE6FF9EE281</span></p><br><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>AppStartDate</span>:<br><span class='debug-compile-info-entry-value attention-code'>2023-10-31 21:00:39.567</span></p><br><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>StylesHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>D874A857C9AE35986454587CF15ED802E0DA670AA6BCBF2B7311FA7D0367145E</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>ScriptsHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>B2860447F9AF448ED6C9353FCAD64AB324ABFB5D42697A9CA3F1A2C9535129E8</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>AdditionalHeadContentHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>CDB97F7F404FBF14B9786071235C8E643776E7B3C78B6A356497F4AFAF322B64</span></p><br><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>InfoMaterialThemeConfigStringHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>B8DCFC35882913CD5715D13D86E7B57EDD449F5B485227BD27EB4ECA5137977E</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>HtmlTextFormaterStringHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>A159655E83885E8FF9D6FC426962A537B7531719A8F56CF94C9C3F419143F364</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>GlobalHtmlTextFormaterStringHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>5067B52C74FF19E13B56287119F9F52D3025AA14D41363C36EAFA7F6FDC2E54A</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>HeaderHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>9E4B3F1397C37693AF319C23C8F060DE91A17F60A58AFE3CAF18B2FF6C4ADD63</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>FooterHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>B8EA0644585A6D27C6B10FD167809CF1F1884EDC0374A494362B16876CE98B96</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>AdditionalMainDivContentHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>D05224365F5F8632B8AC84C4032E59B7F61910A18D95DEB5F1C54140777D314C</span></p></div><div class="workaround-div-for-compile-only">    <div class="theme-main-container chapter-selector-container">        <a class="button-main chapter-selector-link" href="theme.html">            <p class="chapter-selector-text">Теорія</p>        </a>        <a class="button-main chapter-selector-link" href="tasks.html">            <p class="chapter-selector-text">Завдання</p>        </a>    </div></div><div class='theme-main-container' align='center'><p class='theme-main-header'>Наслідування(inheritance) та Окремі файли (ООП 2)</p></div><div class='theme-main-container' align='center'><h1 class='theme-header'>Наслідування</h1><p class='theme-text-container theme-text-container-info'>Що таке Наслідування?</p><div class='theme-additional-content-container-main'><button class='button-main theme-additional-content-expander'>Показати</button><div class='theme-additional-content-container collapsed'><div class='code-and-explanation-container'><p class='theme-text-container theme-text-container-code-comment'>Наслідування - це один з фундаментальних концепцій об'єктно-орієнтованого програмування (ООП). Воно дозволяє створювати новий клас на основі існуючого класу, успадковуючи його властивості та методи. Цей новий клас називається підкласом, а існуючий - батьківським класом.</p><p class='theme-text-container theme-text-container-code-comment'>Синтаксис наслідування в <span class='attention-code'>C#</span>:</p><div class='code-pre-container'><pre><code class='language-cs'>class ChildClass : ParentClass
+{
+    // Додаткові поля та методи для ChildClass
+}
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>Розглянемо приклад, де маємо батьківський клас <code>Animal</code> та підклас <code>Cat</code>, який успадковує властивості та методи від батьківського класу.</p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+
+// Батьківський клас
+class Animal
+{
+    public string Name { get; set; }
+
+    public void MakeSound()
+    {
+        Console.WriteLine("Звук тварини");
+    }
+}
+
+// Підклас, який успадковує Animal
+class Cat : Animal
+{
+    public void Purr()
+    {
+        Console.WriteLine("Кіт муркотить");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Cat myCat = new Cat();
+        myCat.Name = "Барсик";
+        
+        // Виклик методу з батьківського класу
+        myCat.MakeSound(); // Виведе "Звук тварини"
+        
+        // Виклик методу з підкласу
+        myCat.Purr(); // Виведе "Кіт муркотить"
+    }
+}
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>У цьому прикладі клас <code>Cat</code> успадковує властивість <code>Name</code> та метод <code>MakeSound</code> від класу <code>Animal</code>. Крім того, він має свій власний метод <code>Purr</code>.</p><p class='theme-text-container theme-text-container-code-comment'>Наслідування дозволяє створювати ієрархію класів та спрощує використання коду, оскільки ви можете перевикористовувати властивості та методи батьківського класу в підкласі.</p></div></div></div></div><div class='theme-main-container' align='center'><h1 class='theme-header'>Створення та використання коду в різних файлах</h1><p class='theme-text-container theme-text-container-info'>Як створювати класи в різних файлах та потім їх використовувати.</p><div class='theme-additional-content-container-main'><button class='button-main theme-additional-content-expander'>Показати</button><div class='theme-additional-content-container collapsed'><div class='code-and-explanation-container'><p class='theme-text-container theme-text-container-code-comment'><strong>Створення та використання коду в різних файлах:</strong></p><div class='theme-additional-html-content-container'><ol class="theme-list"><li><p><strong>Створіть новий проєкт</strong>: Спочатку створіть новий проєкт в Visual Studio Code або за допомогою .NET CLI.</p></li><li><p><strong>Створіть файли класів</strong>: Для того щоб створити код у різних файлах, створіть файли класів з розширенням <code>.cs</code>. Наприклад, ви можете створити два файли: <code>MainClass.cs</code> та <code>HelperClass.cs</code>.</p></li><li><p><strong>Оголосьте класи</strong>: У кожному файлі класу ви можете оголосити свій клас. Ось приклад файлу <code>MainClass.cs</code>:</p></li></ol></div><div class='code-pre-container'><pre><code class='language-cs'>using System;
+
+public class MainClass
+{
+    public void MainMethod()
+    {
+        Console.WriteLine("Це головний метод");
+    }
+}
+</code></pre></div><div class='theme-additional-html-content-container'><ul class="theme-list"><li><strong>Використання класів</strong>: Тепер у іншому файлі, наприклад, <code>HelperClass.cs</code>, ви можете використовувати класи, які оголошено в інших файлах. Ось приклад <code>HelperClass.cs</code>:</li></ul></div><div class='code-pre-container'><pre><code class='language-cs'>public class HelperClass
+{
+    public void HelperMethod()
+    {
+        MainClass mainClass = new MainClass();
+        mainClass.MainMethod();
+        Console.WriteLine("Це допоміжний метод");
+    }
+}
+</code></pre></div><div class='theme-additional-html-content-container'><ul class="theme-list"><li><strong>Виклик методів</strong>: У вашому головному файлі, наприклад, <code>Program.cs</code>, ви можете створити об'єкти цих класів і викликати їхні методи:</li></ul></div><div class='code-pre-container'><pre><code class='language-cs'>class Program
+{
+    static void Main()
+    {
+        MainClass mainClass = new MainClass();
+        HelperClass helperClass = new HelperClass();
+
+        mainClass.MainMethod();
+        helperClass.HelperMethod();
+    }
+}
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>Таким чином, ви можете розділяти код вашого проєкту на різні файли та використовувати його для кращої організації та модульності. У цьому прикладі <code>MainClass</code> та <code>HelperClass</code> оголошені у різних файлах, і вони все одно можуть взаємодіяти один з одним в програмі.</p><p class='theme-text-container theme-text-container-code-comment'>Не забудьте додати файли класів до вашого проєкту та скомпілювати його для правильної роботи.</p></div></div></div></div><div class='theme-main-container' align='center'><h1 class='theme-header'>Наслідування - приклади</h1><p class='theme-text-container theme-text-container-info'>Приклади використання наслідування в <span class='attention-code'>C#</span>.</p><div class='theme-additional-content-container-main'><button class='button-main theme-additional-content-expander'>Показати</button><div class='theme-additional-content-container collapsed'><div class='code-and-explanation-container'><p class='theme-text-container theme-text-container-code-comment'><span class='spanh4'>Приклад 1: Простий наслідуваний клас</span></p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+
+// Батьківський клас
+class Vehicle
+{
+    public string Make { get; set; }
+    public string Model { get; set; }
+
+    public void Start()
+    {
+        Console.WriteLine("Запуск транспортного засобу");
+    }
+}
+
+// Підклас, який успадковує Vehicle
+class Car : Vehicle
+{
+    public void Accelerate()
+    {
+        Console.WriteLine("Авто розганяється");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Car myCar = new Car();
+        myCar.Make = "Toyota";
+        myCar.Model = "Camry";
+
+        myCar.Start();        // Виклик методу з батьківського класу
+        myCar.Accelerate();    // Виклик методу з підкласу
+    }
+}
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>У цьому прикладі <code>Car</code> успадковує властивості та метод <code>Start</code> від батьківського класу <code>Vehicle</code>. Крім того, він має свій власний метод <code>Accelerate</code>.</p><p class='theme-text-container theme-text-container-code-comment'><span class='spanh4'>Приклад 2: Перевизначення методу батьківського класу</span></p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+
+// Батьківський клас
+class Shape
+{
+    public virtual void Draw()
+    {
+        Console.WriteLine("Малюємо фігуру");
+    }
+}
+
+// Підклас, який успадковує Shape та перевизначає метод Draw
+class Circle : Shape
+{
+    public override void Draw()
+    {
+        Console.WriteLine("Малюємо коло");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Shape shape = new Circle();
+        shape.Draw(); // Виклик перевизначеного методу з підкласу
+    }
+}
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>У цьому прикладі метод <code>Draw</code> батьківського класу <code>Shape</code> перевизначено у підкласі <code>Circle</code>. При виклику <code>Draw</code> на об'єкті типу <code>Shape</code>, виконується метод з підкласу.</p><p class='theme-text-container theme-text-container-code-comment'><span class='spanh4'>Приклад 3: Використання базового конструктора</span></p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+
+// Батьківський клас
+class Person
+{
+    public string Name { get; set; }
+
+    public Person(string name)
+    {
+        Name = name;
+    }
+}
+
+// Підклас, який успадковує Person та використовує його конструктор
+class Student : Person
+{
+    public Student(string name, int grade) : base(name)
+    {
+        Grade = grade;
+    }
+
+    public int Grade { get; set; }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Student student = new Student("Олег", 10);
+        Console.WriteLine($"Ім'я: {student.Name}, Клас: {student.Grade}");
+    }
+}
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>У цьому прикладі клас <code>Student</code> успадковує клас <code>Person</code> та використовує конструктор батьківського класу (<code>base(name)</code>), щоб ініціалізувати поле <code>Name</code>.</p><p class='theme-text-container theme-text-container-code-comment'><span class='spanh4'>Приклад 4: Багато рівнів успадкування</span></p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+
+class Animal
+{
+    public void Eat()
+    {
+        Console.WriteLine("Тварина їсть");
+    }
+}
+
+class Mammal : Animal
+{
+    public void GiveBirth()
+    {
+        Console.WriteLine("Ссавець народжується");
+    }
+}
+
+class Dog : Mammal
+{
+    public void Bark()
+    {
+        Console.WriteLine("Собака гавкає");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Dog myDog = new Dog();
+        myDog.Eat();       // Метод успадкований від Animal
+        myDog.GiveBirth(); // Метод успадкований від Mammal
+        myDog.Bark();      // Метод з підкласу Dog
+    }
+}
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>У цьому прикладі показано багаторівневий успадок, де клас <code>Dog</code> успадковує клас <code>Mammal</code>, який, в свою чергу, успадковує клас <code>Animal</code>. Кожен клас додає власні методи.</p><p class='theme-text-container theme-text-container-code-comment'><span class='spanh4'>Приклад 5: Поліморфізм</span></p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+
+class Animal
+{
+    public virtual void MakeSound()
+    {
+        Console.WriteLine("Звук тварини");
+    }
+}
+
+class Dog : Animal
+{
+    public override void MakeSound()
+    {
+        Console.WriteLine("Собака гавкає");
+    }
+}
+
+class Cat : Animal
+{
+    public override void MakeSound()
+    {
+        Console.WriteLine("Кіт муркотить");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Animal myAnimal = new Dog();
+        myAnimal.MakeSound(); // Виклик перевизначеного методу
+    }
+}
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>У цьому прикладі клас <code>Animal</code> має віртуальний метод <code>MakeSound</code>, який перевизначено в підкласах <code>Dog</code> та <code>Cat</code>. Використовуючи поліморфізм, можна визначити метод у батьківському класі, а потім викликати його на об'єкті підкласу, як це показано в <code>Main</code>.</p></div></div></div></div></div><div id='templatemo_footer_wrapper'>    <div id='templatemo_footer'>Copyright © 2022 WebSkill - Всі права захищено.</div></div></body></html>

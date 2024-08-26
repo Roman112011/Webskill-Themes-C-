@@ -1,0 +1,102 @@
+<html><head><title>Тема 12 NUGET та JSON</title><meta charset="utf-8"><link rel="icon" href="../../../images/favicon.png" type="image/x-icon"><link rel='stylesheet' href='../../../styles/prism.css'><link rel='stylesheet' href='../../../styles/master.css'><link rel='stylesheet' href='styles/style.css'><script src='https://code.jquery.com/jquery-3.6.0.min.js' defer=""></script><script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js' defer=""></script><script src='../../../scripts/activate_highlight.js' defer=""></script><script src='../../../scripts/additional_content_button.js' defer=""></script></head><body><div id='templatemo_header_wrapper'>    <div id='templatemo_header'>        <div id='header'>            <br>            <h1 align='center'><a href='#' class='themeA'>Тема 12<br>NUGET та JSON (Newtonsoft.JSON)</a></h1><br>        </div>    </div></div><div class='content'><div class='theme-main-container debug-compile-info-cont' align='center'><p class='theme-main-header debug-compile-info-header'>Complie info</p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>ExecutableCreationTime</span>:<br><span class='debug-compile-info-entry-value attention-code'>10/31/2023 10:59:11PM</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>ExecutableLastWriteTime</span>:<br><span class='debug-compile-info-entry-value attention-code'>10/31/2023 10:59:11PM</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>ExecutableHashSHA256</span>:<br><span class='debug-compile-info-entry-value attention-code'>3F65C0CEBC9EFBA3A2CD6EFE91470B7E1169ED793E8FE501E867C7728B0356B2</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>SettingsHashSHA256</span>:<br><span class='debug-compile-info-entry-value attention-code'>F31E1F0111D4D7CBDB818FD53E8934027CDB68F1C983CCBD5D4E8EE6FF9EE281</span></p><br><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>AppStartDate</span>:<br><span class='debug-compile-info-entry-value attention-code'>2023-10-31 21:00:39.567</span></p><br><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>StylesHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>D874A857C9AE35986454587CF15ED802E0DA670AA6BCBF2B7311FA7D0367145E</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>ScriptsHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>B2860447F9AF448ED6C9353FCAD64AB324ABFB5D42697A9CA3F1A2C9535129E8</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>AdditionalHeadContentHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>CDB97F7F404FBF14B9786071235C8E643776E7B3C78B6A356497F4AFAF322B64</span></p><br><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>InfoMaterialThemeConfigStringHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>2E8986A4901AF1285F59CA1F16D29BCCAE362EF6CE4E5D5AA1EFECA434BD888D</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>HtmlTextFormaterStringHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>ECC914F3CE16D2DF0D1A2BB15CF772D368576721489AD88017773B78C2D2EEB4</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>GlobalHtmlTextFormaterStringHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>5067B52C74FF19E13B56287119F9F52D3025AA14D41363C36EAFA7F6FDC2E54A</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>HeaderHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>9E4B3F1397C37693AF319C23C8F060DE91A17F60A58AFE3CAF18B2FF6C4ADD63</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>FooterHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>B8EA0644585A6D27C6B10FD167809CF1F1884EDC0374A494362B16876CE98B96</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>AdditionalMainDivContentHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>D05224365F5F8632B8AC84C4032E59B7F61910A18D95DEB5F1C54140777D314C</span></p></div><div class="workaround-div-for-compile-only">    <div class="theme-main-container chapter-selector-container">        <a class="button-main chapter-selector-link" href="theme.html">            <p class="chapter-selector-text">Теорія</p>        </a>        <a class="button-main chapter-selector-link" href="tasks.html">            <p class="chapter-selector-text">Завдання</p>        </a>    </div></div><div class='theme-main-container' align='center'><p class='theme-main-header'>NUGET та JSON (Newtonsoft.JSON)</p></div><div class='theme-main-container' align='center'><h1 class='theme-header'><span class='attention-highlight'>NUGET</span> та встановлення <span class='attention-highlight'>Newtonsoft.Json</span></h1><p class='theme-text-container theme-text-container-info'><span class='attention-highlight'>NuGet</span> - це менеджер пакетів для платформи <span class='attention-code'>.NET</span>, який дозволяє додавати, видаляти та керувати залежностями вашого проєкту.</p><div class='theme-additional-content-container-main'><button class='button-main theme-additional-content-expander'>Показати</button><div class='theme-additional-content-container collapsed'><div class='code-and-explanation-container'><p class='theme-text-container theme-text-container-code-comment'><em>1. Що таке <span class='attention-highlight'>NUGET</span>?</em></p><p class='theme-text-container theme-text-container-code-comment'><span class='attention-highlight'>NuGet</span> - це менеджер пакетів для платформи <span class='attention-code'>.NET</span>, який дозволяє додавати, видаляти та керувати залежностями вашого проєкту. Він спрощує процес встановлення та оновлення бібліотек, які ви використовуєте в своєму проєкті. <span class='attention-highlight'>NuGet</span> дозволяє швидко та зручно включати сторонні бібліотеки в вашу програму.</p><p class='theme-text-container theme-text-container-code-comment'><em>2. Використання <span class='attention-highlight'>NuGet</span>:</em></p><p class='theme-text-container theme-text-container-code-comment'>Для встановлення <span class='attention-highlight'>NuGet</span>-пакету, ви можете використовувати <span class='attention-code'>.NET</span> <span class='attention-code'>CLI</span> або Visual Studio, але оскільки ви будете використовувати <span class='attention-highlight'>VSCode</span>, ми розглянемо варіант з <span class='attention-code'>.NET</span> <span class='attention-code'>CLI</span>.</p><p class='theme-text-container theme-text-container-code-comment'><strong>Крок 1: Встановлення <span class='attention-highlight'>NuGet</span>-пакету</strong></p><p class='theme-text-container theme-text-container-code-comment'>Для встановлення <span class='attention-highlight'>NuGet</span>-пакету, використовуйте команду:</p><div class='code-pre-container'><pre><code class='language-cs'>dotnet add package Назва_Пакету
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>Наприклад, для встановлення пакету <span class='attention-highlight'>Newtonsoft.Json</span>:</p><div class='code-pre-container'><pre><code class='language-cs'>dotnet add package Newtonsoft.Json
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'><strong>Крок 2: Використання <span class='attention-highlight'>NuGet</span>-пакету в коді</strong></p><p class='theme-text-container theme-text-container-code-comment'>Після встановлення пакету, ви можете використовувати його в своєму коді. Наприклад, для роботи з <span class='attention-highlight'>Newtonsoft.Json</span> для серіалізації та десеріалізації <span class='attention-highlight'>JSON</span>:</p><div class='code-pre-container'><pre><code class='language-cs'>using Newtonsoft.Json; // Додайте цей import у вашому коді
+
+public class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Серіалізація об'єкта в JSON
+        Person person = new Person { Name = "John", Age = 30 };
+        string json = JsonConvert.SerializeObject(person);
+
+        // Десеріалізація JSON у об'єкт
+        Person deserializedPerson = JsonConvert.DeserializeObject&lt;Person&gt;(json);
+
+        Console.WriteLine($"Name: {deserializedPerson.Name}, Age: {deserializedPerson.Age}");
+    }
+}
+</code></pre></div><div class='theme-additional-html-content-container'><ul class="theme-list"><li><strong>Dapper</strong>: Dapper - це легка ORM для роботи з базами даних, яка допоможе спростити роботу з SQL-запитами.</li><li><strong>FluentValidation</strong>: FluentValidation - це бібліотека для валідації даних у вашому програмному коді.</li><li><strong>Serilog</strong>: Serilog - це бібліотека для логування подій та помилок у вашій програмі.</li></ul></div><p class='theme-text-container theme-text-container-code-comment'>Ці пакети можуть бути встановлені та використані аналогічно до <span class='attention-highlight'>Newtonsoft.Json</span> за допомогою <span class='attention-highlight'>NuGet</span>.</p></div></div></div></div><div class='theme-main-container' align='center'><h1 class='theme-header'>Що таке <span class='attention-highlight'>JSON</span>?</h1><p class='theme-text-container theme-text-container-info'><strong><span class='attention-highlight'>JSON</span> (<span class='attention-highlight'><span class='attention-code'>JavaScript</span> Object Notation</span>)</strong> - це компактний формат обміну даними, який був початково розроблений для <span class='attention-code'>JavaScript</span>, але зараз використовується широкою гамою програмних мов.</p><div class='theme-additional-content-container-main'><button class='button-main theme-additional-content-expander'>Показати</button><div class='theme-additional-content-container collapsed'><div class='code-and-explanation-container'><p class='theme-text-container theme-text-container-code-comment'><strong><span class='attention-highlight'>JSON</span> (<span class='attention-highlight'><span class='attention-code'>JavaScript</span> Object Notation</span>)</strong> - це компактний формат обміну даними, який був початково розроблений для <span class='attention-code'>JavaScript</span>, але зараз використовується широкою гамою програмних мов. <span class='attention-highlight'>JSON</span> це по суті спосіб збереження та передачі структурованих даних у текстовому вигляді. Ось декілька ключових аспектів <span class='attention-highlight'>JSON</span> і причини, чому ми його потребуємо:</p><div class='theme-additional-html-content-container'><ol class="theme-list"><li><p><strong>Простота читання та запису</strong>: JSON використовує чітку та легку синтаксичну структуру, що робить його легко зрозумілим для людей. JSON дані подібні до словника з ключами і значеннями, і вони можуть бути легко читані та редаговані.</p></li><li><p><strong>Легкість інтерпретації для машин</strong>: JSON також легко інтерпретується та обробляється програмами і мовами програмування. Багато мов підтримують бібліотеки для роботи з JSON, що робить обробку даних у цьому форматі дуже зручною.</p></li><li><p><strong>Підтримка структурованих даних</strong>: JSON дозволяє зберігати структуровані дані, такі як масиви та об'єкти, що дозволяє легко організувати та передавати складні структури даних.</p></li><li><p><strong>Популярність у веб-розробці</strong>: JSON є стандартним форматом для обміну даними в сучасних веб-застосунках. Багато веб-сервісів та API повертають дані у форматі JSON, і це дозволяє взаємодіяти з ними зручно та ефективно.</p></li><li><p><strong>Розширюваність</strong>: JSON дозволяє включати додаткові дані або метадані до об'єктів, які надають додаткову інформацію про дані, не порушуючи загальну структуру. Це дозволяє розширювати та адаптувати дані для конкретних потреб.</p></li></ol></div><p class='theme-text-container theme-text-container-code-comment'>Загалом, <span class='attention-highlight'>JSON</span> є важливим інструментом для обміну та зберігання даних, особливо в контексті веб-розробки, мікросервісів, обробки даних та багатьох інших областей програмування. Цей формат спрощує передачу та обробку даних, що робить його незамінним для сучасних програмістів.</p></div></div></div></div><div class='theme-main-container' align='center'><h1 class='theme-header'>Використання <span class='attention-highlight'>Newtonsoft.Json</span></h1><p class='theme-text-container theme-text-container-info'>Використання <span class='attention-highlight'>Newtonsoft.Json</span> для серіалізації та десеріалізації даних.</p><div class='theme-additional-content-container-main'><button class='button-main theme-additional-content-expander'>Показати</button><div class='theme-additional-content-container collapsed'><div class='code-and-explanation-container'><p class='theme-text-container theme-text-container-code-comment'><span class='attention-highlight'>Newtonsoft.Json</span> - це потужна бібліотека для роботи з <span class='attention-highlight'>JSON</span> в <span class='attention-code'>C#</span>. Вона дозволяє легко серіалізувати об'єкти у формат <span class='attention-highlight'>JSON</span> та десеріалізувати <span class='attention-highlight'>JSON</span> у об'єкти. Вам не завжди потрібно зберігати або завантажувати дані з файлів, можна просто використовувати цю бібліотеку для обміну даними між об'єктами та форматом <span class='attention-highlight'>JSON</span>.</p><p class='theme-text-container theme-text-container-code-comment'><strong>Серіалізація в <span class='attention-highlight'>JSON</span>:</strong></p><p class='theme-text-container theme-text-container-code-comment'>Серіалізація - це процес перетворення об'єкта в формат <span class='attention-highlight'>JSON</span>. Ваш об'єкт стає рядком <span class='attention-highlight'>JSON</span>. Ось приклад:</p><div class='code-pre-container'><pre><code class='language-cs'>using Newtonsoft.Json;
+
+public class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Створюємо об'єкт типу Person
+        Person person = new Person { Name = "Іван", Age = 25 };
+
+        // Серіалізація в JSON
+        string json = JsonConvert.SerializeObject(person);
+
+        // Вивід серіалізованого JSON у консоль
+        Console.WriteLine(json);
+    }
+}
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>У цьому прикладі об'єкт типу <code>Person</code> був серіалізований у рядок JSON.</p><p class='theme-text-container theme-text-container-code-comment'><strong>Десеріалізація з <span class='attention-highlight'>JSON</span>:</strong></p><p class='theme-text-container theme-text-container-code-comment'>Десеріалізація - це процес перетворення <span class='attention-highlight'>JSON</span> назад у об'єкт <span class='attention-code'>C#</span>. Ось як це працює:</p><div class='code-pre-container'><pre><code class='language-cs'>using Newtonsoft.Json;
+
+public class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Рядок JSON, який ми хочемо десеріалізувати
+        string json = "{\"Name\":\"Марія\",\"Age\":30}";
+
+        // Десеріалізація JSON у об'єкт
+        Person deserializedPerson = JsonConvert.DeserializeObject&lt;Person&gt;(json);
+
+        // Вивід десеріалізованого об'єкта
+        Console.WriteLine($"Ім'я: {deserializedPerson.Name}, Вік: {deserializedPerson.Age}");
+    }
+}
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>У цьому прикладі ми використали метод <code>JsonConvert.DeserializeObject</code>, щоб створити об'єкт типу <code>Person</code> з рядка JSON.</p></div></div></div></div><div class='theme-main-container' align='center'><h1 class='theme-header'><span class='attention-code'>File.ReadAllText()</span>, <span class='attention-code'>File.WriteAllText()</span> та <span class='attention-highlight'>Newtonsoft.Json</span></h1><p class='theme-text-container theme-text-container-info'>Використання <span class='attention-code'>File.ReadAllText()</span> та <span class='attention-code'>File.WriteAllText()</span> з <span class='attention-highlight'>Newtonsoft.Json</span> для зберігання та завантаження даних.</p><div class='theme-additional-content-container-main'><button class='button-main theme-additional-content-expander'>Показати</button><div class='theme-additional-content-container collapsed'><div class='code-and-explanation-container'><p class='theme-text-container theme-text-container-code-comment'>Для зберігання та завантаження даних з файлу за допомогою <span class='attention-highlight'>Newtonsoft.Json</span> в <span class='attention-code'>C#</span>, ви можете використовувати методи <span class='attention-code'>File.ReadAllText()</span> та <span class='attention-code'>File.WriteAllText()</span> для читання та запису <span class='attention-highlight'>JSON</span> даних у файл. Ось приклад, як це можна зробити:</p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+using System.IO;
+using Newtonsoft.Json;
+
+public class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Створення об'єкта типу Person
+        Person person = new Person { Name = "Іван", Age = 25 };
+
+        // Серіалізація об'єкта в JSON
+        string json = JsonConvert.SerializeObject(person);
+
+        // Зберігання JSON у файл
+        File.WriteAllText("person.json", json);
+
+        // Завантаження JSON з файлу
+        string loadedJson = File.ReadAllText("person.json");
+
+        // Десеріалізація JSON у об'єкт
+        Person deserializedPerson = JsonConvert.DeserializeObject&lt;Person&gt;(loadedJson);
+
+        // Вивід десеріалізованого об'єкта
+        Console.WriteLine($"Ім'я: {deserializedPerson.Name}, Вік: {deserializedPerson.Age}");
+    }
+}
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>У цьому прикладі ми:</p><div class='theme-additional-html-content-container'><ol class="theme-list"><li>Створюємо об'єкт типу <code>Person</code>.</li><li>Серіалізуємо цей об'єкт в JSON та зберігаємо його у файл "person.json" за допомогою <code>File.WriteAllText()</code>.</li><li>Завантажуємо JSON з файлу "person.json" за допомогою <code>File.ReadAllText()</code>.</li><li>Десеріалізуємо JSON у об'єкт типу <code>Person</code>.</li><li>Виводимо десеріалізований об'єкт на консоль.</li></ol></div></div></div></div></div></div><div id='templatemo_footer_wrapper'>    <div id='templatemo_footer'>Copyright © 2022 WebSkill - Всі права захищено.</div></div></body></html>

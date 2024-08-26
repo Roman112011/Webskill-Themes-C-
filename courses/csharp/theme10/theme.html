@@ -1,0 +1,256 @@
+<html><head><title>Тема 10 System.IO</title><meta charset="utf-8"><link rel="icon" href="../../../images/favicon.png" type="image/x-icon"><link rel='stylesheet' href='../../../styles/prism.css'><link rel='stylesheet' href='../../../styles/master.css'><link rel='stylesheet' href='styles/style.css'><script src='https://code.jquery.com/jquery-3.6.0.min.js' defer=""></script><script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js' defer=""></script><script src='../../../scripts/activate_highlight.js' defer=""></script><script src='../../../scripts/additional_content_button.js' defer=""></script></head><body><div id='templatemo_header_wrapper'>    <div id='templatemo_header'>        <div id='header'>            <br>            <h1 align='center'><a href='#' class='themeA'>Тема 10<br>System.IO</a></h1><br>        </div>    </div></div><div class='content'><div class='theme-main-container debug-compile-info-cont' align='center'><p class='theme-main-header debug-compile-info-header'>Complie info</p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>ExecutableCreationTime</span>:<br><span class='debug-compile-info-entry-value attention-code'>10/31/2023 10:59:11PM</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>ExecutableLastWriteTime</span>:<br><span class='debug-compile-info-entry-value attention-code'>10/31/2023 10:59:11PM</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>ExecutableHashSHA256</span>:<br><span class='debug-compile-info-entry-value attention-code'>3F65C0CEBC9EFBA3A2CD6EFE91470B7E1169ED793E8FE501E867C7728B0356B2</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>SettingsHashSHA256</span>:<br><span class='debug-compile-info-entry-value attention-code'>F31E1F0111D4D7CBDB818FD53E8934027CDB68F1C983CCBD5D4E8EE6FF9EE281</span></p><br><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>AppStartDate</span>:<br><span class='debug-compile-info-entry-value attention-code'>2023-10-31 21:00:39.567</span></p><br><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>StylesHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>D874A857C9AE35986454587CF15ED802E0DA670AA6BCBF2B7311FA7D0367145E</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>ScriptsHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>B2860447F9AF448ED6C9353FCAD64AB324ABFB5D42697A9CA3F1A2C9535129E8</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>AdditionalHeadContentHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>CDB97F7F404FBF14B9786071235C8E643776E7B3C78B6A356497F4AFAF322B64</span></p><br><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>InfoMaterialThemeConfigStringHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>333A874A00E249704E9C08AD08DFBA0C87BF3960BC4D104B6DABF24B95744507</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>HtmlTextFormaterStringHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>D825C1CF345EC04D10D9E2E73F676CEEDF77C1944622C7B3B40C48422E7A4188</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>GlobalHtmlTextFormaterStringHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>5067B52C74FF19E13B56287119F9F52D3025AA14D41363C36EAFA7F6FDC2E54A</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>HeaderHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>9E4B3F1397C37693AF319C23C8F060DE91A17F60A58AFE3CAF18B2FF6C4ADD63</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>FooterHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>B8EA0644585A6D27C6B10FD167809CF1F1884EDC0374A494362B16876CE98B96</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>AdditionalMainDivContentHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>D05224365F5F8632B8AC84C4032E59B7F61910A18D95DEB5F1C54140777D314C</span></p></div><div class="workaround-div-for-compile-only">    <div class="theme-main-container chapter-selector-container">        <a class="button-main chapter-selector-link" href="theme.html">            <p class="chapter-selector-text">Теорія</p>        </a>        <a class="button-main chapter-selector-link" href="tasks.html">            <p class="chapter-selector-text">Завдання</p>        </a>    </div></div><div class='theme-main-container' align='center'><p class='theme-main-header'>Файлова система/System.IO</p></div><div class='theme-main-container' align='center'><h1 class='theme-header'>Файлова система/<span class='attention-code'>System.IO</span> - Вступ</h1><p class='theme-text-container theme-text-container-info'><span class='attention-code'>C#</span> має великий набір інструментів для роботи з файловою системою. Ці інструменти доступні завдяки простору імен <span class='attention-code'>System.IO</span>, який надає можливості для створення, читання, запису та видалення файлів і папок.</p><div class='theme-additional-content-container-main'><button class='button-main theme-additional-content-expander'>Показати</button><div class='theme-additional-content-container collapsed'><div class='code-and-explanation-container'><p class='theme-text-container theme-text-container-code-comment'>Основні інструменти, які надає <span class='attention-code'>System.IO</span>, включають:</p><div class='theme-additional-html-content-container'><ol class="theme-list"><li><p><code>File</code>: Цей клас дозволяє вам створювати, читати, записувати та видаляти файли. Він також дозволяє перевіряти наявність файлів та копіювати їх.</p></li><li><p><code>Directory</code>: Цей клас надає можливості для роботи з папками. Ви можете створювати, видаляти, переміщати та переглядати папки.</p></li><li><p><code>Path</code>: Клас <code>Path</code> надає допоміжні функції для роботи зі шляхами до файлів і папок. Ви можете використовувати його для об'єднання шляхів, отримання імені файлу або папки, та ін.</p></li></ol></div><p class='theme-text-container theme-text-container-code-comment'>Ось приклади використання цих інструментів:</p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        // Створення нового файлу
+        File.WriteAllText("example.txt", "Це зразок тексту.");
+
+        // Перевірка наявності файлу
+        if (File.Exists("example.txt"))
+        {
+            // Читання файлу
+            string text = File.ReadAllText("example.txt");
+            Console.WriteLine("Вміст файлу: " + text);
+        }
+
+        // Створення нової папки
+        Directory.CreateDirectory("НоваПапка");
+
+        // Перегляд вмісту папки
+        string[] files = Directory.GetFiles("НоваПапка");
+        string[] directories = Directory.GetDirectories("НоваПапка");
+
+        Console.WriteLine("Файли в папці:");
+        foreach (string file in files)
+        {
+            Console.WriteLine(file);
+        }
+
+        Console.WriteLine("Папки в папці:");
+        foreach (string directory in directories)
+        {
+            Console.WriteLine(directory);
+        }
+    }
+}
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>У цьому прикладі ми створюємо файл, перевіряємо наявність файлу, читаємо його вміст, створюємо папку та переглядаємо файли та папки в цій папці. <span class='attention-code'>System.IO</span> надає різноманітні можливості для роботи з файловою системою в <span class='attention-code'>C#</span>.</p></div></div></div></div><div class='theme-main-container' align='center'><h1 class='theme-header'><span class='attention-code'>System.IO</span> - <span class='attention-code'>File</span></h1><p class='theme-text-container theme-text-container-info'>Клас "<span class='attention-code'>File</span>" в просторі імен "<span class='attention-code'>System.IO</span>".</p><div class='theme-additional-content-container-main'><button class='button-main theme-additional-content-expander'>Показати</button><div class='theme-additional-content-container collapsed'><div class='code-and-explanation-container'><p class='theme-text-container theme-text-container-code-comment'>Клас "<span class='attention-code'>File</span>" в просторі імен "<span class='attention-code'>System.IO</span>" в <span class='attention-code'>C#</span> надає інструменти для роботи з файлами. Він дозволяє створювати, читати, записувати, видаляти та взаємодіяти з файлами. Ось детальні пояснення та приклади використання цього класу:</p><div class='theme-additional-html-content-container'><ol class="theme-list"><li><p><strong>Створення файлу</strong>:Для створення нового файлу використовуйте метод <code>File.Create()</code>. Цей метод створює порожній файл або очищає існуючий файл. Наприклад:</p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        // Створення нового файлу або очищення існуючого
+        File.Create("новий_файл.txt").Close();
+    }
+}
+</code></pre></div></li><li><p><strong>Запис у файл</strong>:Щоб записати дані в файл, використовуйте метод <code>File.WriteAllText()</code>. Він записує текстові дані в файл. Наприклад:</p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        // Запис тексту в файл
+        File.WriteAllText("зразок.txt", "Це приклад тексту для файлу.");
+    }
+}
+</code></pre></div></li><li><p><strong>Читання файлу</strong>:Для читання вмісту файлу використовуйте метод <code>File.ReadAllText()</code>. Він повертає вміст файлу як рядок. Наприклад:</p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        // Читання вмісту файлу
+        string text = File.ReadAllText("зразок.txt");
+        Console.WriteLine("Вміст файлу: " + text);
+    }
+}
+</code></pre></div></li><li><p><strong>Перевірка наявності файлу</strong>:Для перевірки наявності файлу використовуйте метод <code>File.Exists()</code>. Він повертає <code>true</code>, якщо файл існує, і <code>false</code>, якщо файл відсутній. Наприклад:</p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        // Перевірка наявності файлу
+        if (File.Exists("зразок.txt"))
+        {
+            Console.WriteLine("Файл існує.");
+        }
+        else
+        {
+            Console.WriteLine("Файл не існує.");
+        }
+    }
+}
+</code></pre></div></li><li><p><strong>Видалення файлу</strong>:Для видалення файлу використовуйте метод <code>File.Delete()</code>. Він видаляє файл з файлової системи. Наприклад:</p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        // Видалення файлу
+        File.Delete("зразок.txt");
+    }
+}
+</code></pre></div></li></ol></div><p class='theme-text-container theme-text-container-code-comment'>Клас "<span class='attention-code'>File</span>" надає ряд корисних методів для роботи з файлами в <span class='attention-code'>C#</span> та дозволяє легко взаємодіяти з файловою системою.</p></div></div></div></div><div class='theme-main-container' align='center'><h1 class='theme-header'><span class='attention-code'>System.IO</span> - <span class='attention-code'>Directory</span></h1><p class='theme-text-container theme-text-container-info'>Клас "<span class='attention-code'>Directory</span>" в просторі імен "<span class='attention-code'>System.IO</span>".</p><div class='theme-additional-content-container-main'><button class='button-main theme-additional-content-expander'>Показати</button><div class='theme-additional-content-container collapsed'><div class='code-and-explanation-container'><p class='theme-text-container theme-text-container-code-comment'>Клас "<span class='attention-code'>Directory</span>" в просторі імен "<span class='attention-code'>System.IO</span>" в <span class='attention-code'>C#</span> надає інструменти для роботи з папками (каталогами). Він дозволяє створювати, видаляти, переміщати, переглядати та взаємодіяти з папками в файловій системі. Ось детальні пояснення та приклади використання цього класу:</p><div class='theme-additional-html-content-container'><ol class="theme-list"><li><p><strong>Створення папки</strong>:Для створення нової папки використовуйте метод <code>Directory.CreateDirectory()</code>. Цей метод створює нову папку з вказаним ім'ям. Наприклад:</p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        // Створення нової папки
+        Directory.CreateDirectory("Нова_папка");
+    }
+}
+</code></pre></div></li><li><p><strong>Видалення папки</strong>:Для видалення папки використовуйте метод <code>Directory.Delete()</code>. Видалення папки може бути небезпечним, тому будьте обережні. Наприклад:</p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        // Видалення папки (якщо папка порожня)
+        Directory.Delete("Нова_папка");
+    }
+}
+</code></pre></div></li><li><p><strong>Перегляд вмісту папки</strong>:Ви можете переглядати файли та папки, які містяться в папці, за допомогою методів <code>Directory.GetFiles()</code> та <code>Directory.GetDirectories()</code>. Наприклад:</p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        // Перегляд вмісту папки
+        string[] files = Directory.GetFiles("Папка_з_файлами");
+        string[] directories = Directory.GetDirectories("Папка_з_папками");
+
+        Console.WriteLine("Файли в папці:");
+        foreach (string file in files)
+        {
+            Console.WriteLine(file);
+        }
+
+        Console.WriteLine("Папки в папці:");
+        foreach (string directory in directories)
+        {
+            Console.WriteLine(directory);
+        }
+    }
+}
+</code></pre></div></li><li><p><strong>Перевірка наявності папки</strong>:Для перевірки наявності папки використовуйте метод <code>Directory.Exists()</code>. Він повертає <code>true</code>, якщо папка існує, і <code>false</code>, якщо папка відсутня. Наприклад:</p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        // Перевірка наявності папки
+        if (Directory.Exists("Папка_з_файлами"))
+        {
+            Console.WriteLine("Папка існує.");
+        }
+        else
+        {
+            Console.WriteLine("Папка не існує.");
+        }
+    }
+}
+</code></pre></div></li></ol></div><p class='theme-text-container theme-text-container-code-comment'>Клас "<span class='attention-code'>Directory</span>" дозволяє вам легко взаємодіяти з папками в файловій системі та використовувати їх для організації файлів та інших даних на вашому комп'ютері.</p></div></div></div></div><div class='theme-main-container' align='center'><h1 class='theme-header'><span class='attention-code'>System.IO</span> - <span class='attention-code'>Path</span></h1><p class='theme-text-container theme-text-container-info'>Клас "<span class='attention-code'>Path</span>" в просторі імен "<span class='attention-code'>System.IO</span>".</p><div class='theme-additional-content-container-main'><button class='button-main theme-additional-content-expander'>Показати</button><div class='theme-additional-content-container collapsed'><div class='code-and-explanation-container'><p class='theme-text-container theme-text-container-code-comment'>Клас "<span class='attention-code'>Path</span>" в просторі імен "<span class='attention-code'>System.IO</span>" в <span class='attention-code'>C#</span> надає інструменти для роботи зі шляхами до файлів і папок. Він дозволяє вам створювати, об'єднувати, отримувати інформацію про шляхи та виконувати інші операції пов'язані з роботою із шляхами. Ось детальні пояснення та приклади використання класу "<span class='attention-code'>Path</span>":</p><div class='theme-additional-html-content-container'><ol class="theme-list"><li><p><strong>Об'єднання шляхів</strong>:Використовуючи метод <code>Path.Combine()</code>, ви можете об'єднати декілька шляхів в один. Це корисно, коли вам потрібно створити шлях до файлу або папки, об'єднавши декілька частин шляху. Наприклад:</p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        string folder = "Моя_Папка";
+        string filename = "файл.txt";
+
+        string fullPath = Path.Combine(folder, filename);
+        Console.WriteLine("Повний шлях: " + fullPath);
+    }
+}
+</code></pre></div></li><li><p><strong>Отримання імені файлу або папки</strong>:Метод <code>Path.GetFileName()</code> дозволяє отримати ім'я файлу або папки з вказаного шляху. Наприклад:</p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        string filePath = "Папка_з_файлами/файл.txt";
+        string fileName = Path.GetFileName(filePath);
+        Console.WriteLine("Ім'я файлу: " + fileName);
+    }
+}
+</code></pre></div></li><li><p><strong>Отримання імені розширення файлу</strong>:Метод <code>Path.GetExtension()</code> дозволяє отримати розширення файлу з вказаного шляху. Наприклад:</p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        string filePath = "Папка_з_файлами/файл.txt";
+        string fileExtension = Path.GetExtension(filePath);
+        Console.WriteLine("Розширення файлу: " + fileExtension);
+    }
+}
+</code></pre></div></li><li><p><strong>Перевірка наявності неправильних символів у шляху</strong>:Метод <code>Path.GetInvalidFileNameChars()</code> дозволяє отримати масив символів, які не можуть бути використані у шляху до файлу або папки через обмеження операційної системи. Наприклад:</p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        char[] invalidChars = Path.GetInvalidFileNameChars();
+        Console.WriteLine("Неправильні символи для імен файлів або папок:");
+        foreach (char invalidChar in invalidChars)
+        {
+            Console.Write(invalidChar + " ");
+        }
+    }
+}
+</code></pre></div></li></ol></div><p class='theme-text-container theme-text-container-code-comment'>Клас "<span class='attention-code'>Path</span>" допомагає працювати зі шляхами до файлів і папок, забезпечуючи потрібну функціональність для обробки шляхів та роботи з файлами та папками відповідно до вимог вашої програми.</p></div></div></div></div><div class='theme-main-container' align='center'><h1 class='theme-header'>Приклад програми, яка використовує класи "<span class='attention-code'>File</span>", "<span class='attention-code'>Directory</span>" і "<span class='attention-code'>Path</span>"</h1><p class='theme-text-container theme-text-container-info'>Приклад програми, яка використовує класи "<span class='attention-code'>File</span>", "<span class='attention-code'>Directory</span>" і "<span class='attention-code'>Path</span>" для створення нової папки, запису текстового файлу в цій папці та відображення списку файлів у папці.</p><div class='theme-additional-content-container-main'><button class='button-main theme-additional-content-expander'>Показати</button><div class='theme-additional-content-container collapsed'><div class='code-and-explanation-container'><p class='theme-text-container theme-text-container-code-comment'>Приклад програми, яка використовує класи "<span class='attention-code'>File</span>", "<span class='attention-code'>Directory</span>" і "<span class='attention-code'>Path</span>" для створення нової папки, запису текстового файлу в цій папці та відображення списку файлів у папці. Ця програма також використовує "<span class='attention-code'>Path</span>" для об'єднання шляхів та отримання імені файлу:</p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        // Шлях до папки, яку ми створимо
+        string folderPath = "Нова_Папка";
+
+        // Створення нової папки
+        Directory.CreateDirectory(folderPath);
+        Console.WriteLine("Створено нову папку: " + folderPath);
+
+        // Шлях до файла в новій папці
+        string filePath = Path.Combine(folderPath, "новий_файл.txt");
+
+        // Запис тексту в файл
+        File.WriteAllText(filePath, "Це приклад тексту для файлу в новій папці.");
+        Console.WriteLine("Записано текст у файл: " + filePath);
+
+        // Перевірка наявності файла
+        if (File.Exists(filePath))
+        {
+            Console.WriteLine("Файл існує.");
+        }
+
+        // Відображення імен файлів у папці
+        string[] files = Directory.GetFiles(folderPath);
+        Console.WriteLine("Файли в папці:");
+        foreach (string file in files)
+        {
+            string fileName = Path.GetFileName(file);
+            Console.WriteLine(fileName);
+        }
+    }
+}
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>Ця програма виконує наступні дії:</p><div class='theme-additional-html-content-container'><ol class="theme-list"><li>Створює нову папку з іменем "Нова_Папка".</li><li>Об'єднує шляхи до папки та файлу в новій папці.</li><li>Записує текстовий файл з текстом-прикладом  в папку.</li><li>Перевіряє наявність створеного файла в папці та виводить відповідне повідомлення.</li><li>Виводить імена всіх файлів у створеній папці.</li></ol></div><p class='theme-text-container theme-text-container-code-comment'>Ця програма демонструє, як використовувати класи "<span class='attention-code'>File</span>", "<span class='attention-code'>Directory</span>" та "<span class='attention-code'>Path</span>" для взаємодії з файловою системою, створення та роботи з файлами та папками, а також для опрацювання шляхів до них.</p></div></div></div></div></div><div id='templatemo_footer_wrapper'>    <div id='templatemo_footer'>Copyright © 2022 WebSkill - Всі права захищено.</div></div></body></html>

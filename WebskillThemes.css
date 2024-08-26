@@ -1,0 +1,115 @@
+Body
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(51, 51, 51);
+}
+h2
+{
+    color: rgb(169, 196, 220);
+}
+input
+{
+    font-size: 15px;
+    width: 1100px;
+    margin-left: 110px;
+    text-align: left;
+    background-color: rgb(110, 111, 112);
+    padding: 15px;
+}
+form :hover
+{
+    background-color: rgb(254, 255, 255);
+}
+img
+{
+    position: absolute;
+    width:25px;
+    margin-left: 1150px;
+    padding-top: 15px ;
+    padding-bottom: 15px;
+}
+.onefoto{
+    margin-top: 50px ;
+}
+.twofoto{
+    margin-top: 100px ;
+}
+.threefoto
+{
+    margin-top: 150px ;
+}
+.fourfoto
+{
+    margin-top: 202px ;
+}
+.fivefoto
+{
+    margin-top: 252px ;
+}
+.sixfoto
+{
+    margin-top: 302px ;
+}
+.sevenfoto
+{
+    margin-top: 354px ;
+}
+.eightfoto
+{
+    margin-top: 404px ;
+}
+.ninefoto
+{
+    margin-top: 455px ;
+}
+.tenfoto
+{
+    margin-top: 505px ;
+}
+.onesfoto{
+    margin-top: 556px ;
+}
+.twosfoto{
+    margin-top: 608px ;
+}
+.threesfoto
+{
+    margin-top: 658px ;
+}
+.foursfoto
+{
+    margin-top: 710px ;
+}
+.fivesfoto
+{
+    margin-top: 762px ;
+}
+.sixsfoto
+{
+    margin-top: 812px ;
+}
+.sevensfoto
+{
+    margin-top: 867px ;
+}
+.eightsfoto
+{
+    margin-top: 917px ;
+}
+.ninesfoto
+{
+    margin-top: 967px ;
+}
+.tensfoto
+{
+    margin-top: 1017px ;
+}
+.firstfoto
+{
+    margin-top: 1067px ;
+}
+.secondfoto
+{
+    margin-top: 1117px ;
+}

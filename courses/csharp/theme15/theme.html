@@ -1,0 +1,670 @@
+<html><head><title>Тема 15 Console Game 1</title><meta charset="utf-8"><link rel="icon" href="../../../images/favicon.png" type="image/x-icon"><link rel='stylesheet' href='../../../styles/prism.css'><link rel='stylesheet' href='../../../styles/master.css'><link rel='stylesheet' href='styles/style.css'><script src='https://code.jquery.com/jquery-3.6.0.min.js' defer=""></script><script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js' defer=""></script><script src='../../../scripts/activate_highlight.js' defer=""></script><script src='../../../scripts/additional_content_button.js' defer=""></script></head><body><div id='templatemo_header_wrapper'>    <div id='templatemo_header'>        <div id='header'>            <br>            <h1 align='center'><a href='#' class='themeA'>Тема 15<br>Basic Console Game Engine</a></h1><br>        </div>    </div></div><div class='content'><div class='theme-main-container debug-compile-info-cont' align='center'><p class='theme-main-header debug-compile-info-header'>Complie info</p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>ExecutableCreationTime</span>:<br><span class='debug-compile-info-entry-value attention-code'>03/27/2024 02:09:19</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>ExecutableLastWriteTime</span>:<br><span class='debug-compile-info-entry-value attention-code'>03/27/2024 02:09:19</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>ExecutableHashSHA256</span>:<br><span class='debug-compile-info-entry-value attention-code'>EF45B86474B6E4747501AAB037C01F7D6B1FE6DC5824305E2659CDA47943263A</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>SettingsHashSHA256</span>:<br><span class='debug-compile-info-entry-value attention-code'>F6D9CFAB2E7B5CC5152D66D4C0D51EC04FCF0BB9BE5A805C42FBABC64EACC089</span></p><br><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>AppStartDate</span>:<br><span class='debug-compile-info-entry-value attention-code'>2024-03-27 00:09:25.084</span></p><br><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>StylesHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>D874A857C9AE35986454587CF15ED802E0DA670AA6BCBF2B7311FA7D0367145E</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>ScriptsHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>B2860447F9AF448ED6C9353FCAD64AB324ABFB5D42697A9CA3F1A2C9535129E8</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>AdditionalHeadContentHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>CDB97F7F404FBF14B9786071235C8E643776E7B3C78B6A356497F4AFAF322B64</span></p><br><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>InfoMaterialThemeConfigStringHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>92B66EE837DC6787B9CC9F5103C1A6B9EB76A660CB88430AF7DFBD828FC8F196</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>HtmlTextFormaterStringHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>64247A765CAEBDCCA4321EDFAE359F9976A3E93D62A273E04D69081B9B2A6077</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>GlobalHtmlTextFormaterStringHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>0BD3178F0EB6CF62ED1234C263E422988E2A6CAE5285B6BB27A1CA5F526093C7</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>HeaderHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>9E4B3F1397C37693AF319C23C8F060DE91A17F60A58AFE3CAF18B2FF6C4ADD63</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>FooterHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>B8EA0644585A6D27C6B10FD167809CF1F1884EDC0374A494362B16876CE98B96</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>AdditionalMainDivContentHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>D05224365F5F8632B8AC84C4032E59B7F61910A18D95DEB5F1C54140777D314C</span></p></div><div class="workaround-div-for-compile-only">    <div class="theme-main-container chapter-selector-container">        <a class="button-main chapter-selector-link" href="theme.html">            <p class="chapter-selector-text">Теорія</p>        </a>        <a class="button-main chapter-selector-link" href="tasks.html">            <p class="chapter-selector-text">Завдання</p>        </a>    </div></div><div class='theme-main-container' align='center'><p class='theme-main-header'>Огляд базового консольного рушія та гри написаної на ньому</p></div><div class='theme-main-container' align='center'><h1 class='theme-header'>Загальний опис бібліотеки <code>ConsoleGameEngine</code></h1><p class='theme-text-container theme-text-container-info'><code>ConsoleGameEngine</code> - опис та використання.</p><div class='theme-additional-content-container-main'><button class='button-main theme-additional-content-expander'>Показати</button><div class='theme-additional-content-container collapsed'><div class='code-and-explanation-container'><p class='theme-text-container theme-text-container-code-comment'>Бібліотека <code>ConsoleGameEngine</code> керує основними аспектами створення простих ігор у консольному середовищі. Вона надає інструменти для відображення елементів гри в консольному вікні, керування введенням користувача та оновленням стану гри.</p><p class='theme-text-container theme-text-container-code-comment'><strong>Основні функції <code>ConsoleGameEngine</code>:</strong></p><div class='theme-additional-html-content-container'><ol class="theme-list"><li><p><strong>Відображення елементів гри:</strong> Бібліотека дозволяє відображати символи, кольори та текстові дані на екрані консолі.</p></li><li><p><strong>Керування введенням користувача:</strong> Це включає моніторинг клавіатурного вводу та обробку команд користувача для взаємодії з грою.</p></li><li><p><strong>Оновлення стану гри:</strong> <code>ConsoleGameEngine</code> забезпечує механізми для оновлення стану та позиції гравців, обробки подій та керування ходом гри.</p></li></ol></div><p class='theme-text-container theme-text-container-code-comment'><strong>Загальні завдання та сценарії використання:</strong></p><div class='theme-additional-html-content-container'><ul class="theme-list"><li><p><em>Створення простих ігор:</em> Бібліотека дозволяє створювати консольні ігри з базовим функціоналом, таким як рух об'єктів, відображення ігрових об'єктів, та реакція на користувацький ввід.</p></li><li><p><em>Керування елементами гри:</em> Розробники можуть використовувати цю бібліотеку для створення та керування елементами гри, такими як збір балів, керування гравцями та малювання ігрового поля.</p></li><li><p><em>Взаємодія з користувачем:</em> Вона дозволяє створювати ігри, які реагують на дії користувача, надаючи можливість взаємодії з грою через клавіатуру.</p></li></ul></div><p class='theme-text-container theme-text-container-code-comment'><code>ConsoleGameEngine</code> виступає як інструмент для створення простих консольних ігор, надаючи розробнику зручні та прості інструменти для реалізації логіки гри та відображення її елементів на екрані консолі.</p><p class='theme-text-container theme-text-container-code-comment'>Консольний ігровий рушій (<code>ConsoleGameEngine</code>) складається з кількох файлів, кожен з яких відповідає за певний елемент ігрового середовища:</p><div class='theme-additional-html-content-container'><ol class="theme-list"><li><p><strong>ConsoleGameEngine.csproj:</strong> Це файл проєкту, який містить конфігураційні дані проєкту, зокрема залежності та налаштування компіляції.</p></li><li><p><strong>ConsolePainter.cs:</strong> Цей файл містить клас <code>ConsolePainter</code>, який відповідає за відображення графічних елементів на екрані консолі, таких як символи, кольори та текстові дані.</p></li><li><p><strong>GameBoard.cs:</strong> В цьому файлі знаходиться клас <code>GameBoard</code>, який відповідає за ігрове поле або дошку, на якій розміщуються ігрові об'єкти.</p></li><li><p><strong>GameObject.cs:</strong> Цей файл містить опис класу <code>GameObject</code>, який репрезентує окремий об'єкт у грі. Це може бути гравець, ворог, або будь-який інший елемент.</p></li><li><p><strong>UserInputManager.cs:</strong> В цьому файлі знаходиться клас <code>UserInputManager</code>, який відповідає за управління введенням користувача та обробку команд, отриманих від користувача під час гри.</p></li></ol></div><p class='theme-text-container theme-text-container-code-comment'>Кожен з цих файлів має своє призначення у створенні ігрового середовища: від відображення елементів на екрані до керування введенням користувача та управління об'єктами у грі. Разом вони створюють базову інфраструктуру для розробки консольних ігор за допомогою <code>ConsoleGameEngine</code>.</p></div></div></div></div><div class='theme-main-container' align='center'><h1 class='theme-header'>Файли та проєкт бібліотеки <code>ConsoleGameEngine</code></h1><p class='theme-text-container theme-text-container-info'><code>ConsoleGameEngine</code> - source code.</p><div class='theme-additional-content-container-main'><button class='button-main theme-additional-content-expander'>Показати</button><div class='theme-additional-content-container collapsed'><div class='code-and-explanation-container'><p class='theme-text-container theme-text-container-code-comment'><strong>ConsoleGameEngine.csproj:</strong></p><div class='code-pre-container'><pre><code class='language-xml'>&lt;Project Sdk="Microsoft.NET.Sdk"&gt;
+
+    &lt;PropertyGroup&gt;
+        &lt;TargetFramework&gt;net8.0&lt;/TargetFramework&gt;
+        &lt;ImplicitUsings&gt;disabled&lt;/ImplicitUsings&gt;
+        &lt;Nullable&gt;enable&lt;/Nullable&gt;
+    &lt;/PropertyGroup&gt;
+
+&lt;/Project&gt;</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>Цей файл, який має розширення <code>.csproj</code>, є файлом проєкту для проєктів, що використовують платформу Microsoft.NET.Sdk. Основні частини цього файлу:</p><div class='theme-additional-html-content-container'><ol class="theme-list"><li><p><strong><code>&lt;Project Sdk="Microsoft.NET.Sdk"&gt;</code>:</strong> Визначає використану SDK для проєкту. У цьому випадку, проєкт використовує SDK від Microsoft.NET.</p></li><li><p><strong><code>&lt;PropertyGroup&gt;</code>:</strong> Ця секція містить рядок властивостей проєкту:</p><ul class="theme-list-inside"><li><p><strong><code>&lt;TargetFramework&gt;net8.0&lt;/TargetFramework&gt;</code>:</strong> Вказує на цільову версію .NET Framework, для якої розробляється проєкт. У цьому випадку, ціль - .NET 8.0, що означає використання функціональності та бібліотек, доступних у версії .NET 8.0.</p></li><li><p><strong><code>&lt;ImplicitUsings&gt;disabled&lt;/ImplicitUsings&gt;</code>:</strong> Ця властивість вказує, чи включені неявні простори імен (implicit usings). У випадку <code>disabled</code>, неявні простори імен відключені.</p></li><li><p><strong><code>&lt;Nullable&gt;enable&lt;/Nullable&gt;</code>:</strong> Ця властивість вказує на використання системи nullable reference types. У цьому випадку, nullable reference types увімкнені для проєкту.</p></li></ul></li></ol></div><p class='theme-text-container theme-text-container-code-comment'>Цей файл <code>.csproj</code> визначає конфігурацію проєкту, таку як версію .NET Framework, налаштування компіляції та інші параметри, необхідні для збирання та виконання проєкту.</p><div class='theme-additional-html-content-container'><hr class='theme-line'></div><p class='theme-text-container theme-text-container-code-comment'><strong>ConsolePainter.cs:</strong></p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+using System.Collections.Generic;
+
+public class ConsolePainter
+{
+    public ConsoleColor[] DrawColors;
+    public ConsoleColor BorderColor = ConsoleColor.White;
+    public ConsoleColor TextColor = ConsoleColor.White;
+
+    public List&lt;string[]&gt; TextDataToDraw = new List&lt;string[]&gt;();
+
+    public char[] DrawChars;
+
+    private byte LastColorId = 255;
+
+    private void DrawTextData(int startX, int startY)
+    {
+        Console.ForegroundColor = TextColor;
+
+        for (int i = 0; i &lt; TextDataToDraw.Count; i++)
+        {
+            string textToDraw = $"[{TextDataToDraw[i][0]}] is [{TextDataToDraw[i][1]}]";
+
+
+            Console.SetCursorPosition(startX, startY + i);
+            Console.Write(new string(' ', textToDraw.Length + 5));
+
+            Console.SetCursorPosition(startX, startY + i);
+            Console.Write(textToDraw);
+        }
+
+        Console.ForegroundColor = DrawColors[LastColorId];
+    }
+
+    private void DrawBordersForMatrix(byte[,] matrix)
+    {
+        int height = matrix.GetLength(0);
+        int width = matrix.GetLength(1);
+
+        Console.ForegroundColor = BorderColor;
+
+        Console.SetCursorPosition(0, 0);
+        Console.Write('┌');
+
+        Console.SetCursorPosition(0, height + 1);
+        Console.Write('└');
+
+        Console.SetCursorPosition(width + 1, 0);
+        Console.Write('┐');
+
+        Console.SetCursorPosition(width + 1, height + 1);
+        Console.Write('┘');
+
+        for (int i = 1; i &lt; height + 1; i++)
+        {
+            Console.SetCursorPosition(0, i);
+            Console.Write('│');
+
+            Console.SetCursorPosition(width + 1, i);
+            Console.Write('│');
+        }
+
+        for (int i = 1; i &lt; width + 1; i++)
+        {
+            Console.SetCursorPosition(i, 0);
+            Console.Write('─');
+
+            Console.SetCursorPosition(i, height + 1);
+            Console.Write('─');
+        }
+
+        Console.ForegroundColor = DrawColors[LastColorId];
+    }
+
+    private void DrawByteMatrixToConsoleCore(byte[,] matrix, int startX, int startY)
+    {
+        int height = matrix.GetLength(0);
+        int width = matrix.GetLength(1);
+
+        for (int y = 0; y &lt; height; y++)
+        {
+            for (int x = 0; x &lt; width; x++)
+            {
+                byte matrixElemId = matrix[y, x];
+
+                if (matrixElemId != LastColorId)
+                {
+                    LastColorId = matrixElemId;
+                    Console.ForegroundColor = DrawColors[matrixElemId];
+                }
+                Console.SetCursorPosition(x + startX, y + startY);
+
+                Console.Write(DrawChars[matrixElemId]);
+            }
+        }
+
+        if (TextDataToDraw.Count &gt; 0)
+        {
+            DrawTextData(0, height + startY + 1);
+        }
+    }
+
+    public void DrawByteMatrixToConsole(byte[,] matrix)
+    {
+        DrawByteMatrixToConsoleCore(matrix, 0, 0);
+    }
+
+    public void DrawByteMatrixToConsole(byte[,] matrix, bool drawBorders)
+    {
+        if (drawBorders)
+        {
+            DrawByteMatrixToConsoleCore(matrix, 1, 1);
+            DrawBordersForMatrix(matrix);
+        }
+        else
+        {
+            DrawByteMatrixToConsole(matrix);
+        }
+    }
+
+    public ConsolePainter(ConsoleColor[] drawColors, char[] drawChars)
+    {
+        SetConsoleDefault();
+
+        DrawColors = drawColors;
+        DrawChars = drawChars;
+    }
+    public ConsolePainter()
+    {
+        SetConsoleDefault();
+
+        DrawColors = GetDefaultDrawColors();
+        DrawChars = GetDefaultDrawChars();
+    }
+
+    private static ConsoleColor[] GetDefaultDrawColors()
+    {
+        ConsoleColor[] result = new ConsoleColor[256]; //from 0 to 255
+
+        FillArrayWithValue(result, ConsoleColor.Red);
+
+        result[0] = ConsoleColor.White;
+        result[1] = ConsoleColor.DarkBlue;
+        result[2] = ConsoleColor.DarkGreen;
+        result[3] = ConsoleColor.DarkCyan;
+        result[4] = ConsoleColor.DarkMagenta;
+        result[5] = ConsoleColor.DarkRed;
+        result[6] = ConsoleColor.DarkYellow;
+        result[7] = ConsoleColor.Blue;
+        result[8] = ConsoleColor.Green;
+        result[9] = ConsoleColor.Cyan;
+        result[10] = ConsoleColor.Magenta;
+        result[11] = ConsoleColor.Red;
+        result[12] = ConsoleColor.Yellow;
+        result[13] = ConsoleColor.White;
+        result[14] = ConsoleColor.Gray;
+        result[15] = ConsoleColor.DarkGray;
+        result[16] = ConsoleColor.Black;
+        result[17] = ConsoleColor.DarkBlue;
+        result[18] = ConsoleColor.DarkGreen;
+        result[19] = ConsoleColor.DarkCyan;
+        result[20] = ConsoleColor.DarkMagenta;
+        result[21] = ConsoleColor.DarkRed;
+        result[22] = ConsoleColor.DarkYellow;
+        result[23] = ConsoleColor.Blue;
+        result[24] = ConsoleColor.Green;
+        result[25] = ConsoleColor.Cyan;
+
+        return result;
+    }
+    private static char[] GetDefaultDrawChars()
+    {
+        char[] result = new char[256]; //from 0 to 255
+
+        FillArrayWithValue(result, '█');
+
+        result[0] = '?';
+        result[1] = '█';
+        result[2] = '▓';
+        result[3] = '▒';
+        result[4] = '░';
+        result[5] = 'X';
+        result[6] = '@';
+        result[7] = '#';
+        result[8] = '$';
+        result[9] = '%';
+        result[10] = '&';
+        result[11] = '*';
+        result[12] = '+';
+        result[13] = '-';
+        result[14] = '=';
+        result[15] = '.';
+        result[16] = '/';
+        result[17] = '0';
+        result[18] = '1';
+        result[19] = '2';
+        result[20] = '3';
+        result[21] = '4';
+        result[22] = '5';
+        result[23] = '6';
+        result[24] = '7';
+        result[25] = '8';
+
+        return result;
+    }
+
+    private static void FillArrayWithValue&lt;T&gt;(T[] arr, T fillerValue) where T : struct
+    {
+        for (int i = 0; i &lt; arr.Length; i++)
+        {
+            arr[i] = fillerValue;
+        }
+    }
+    private static void SetConsoleDefault()
+    {
+        Console.Clear();
+        Console.CursorVisible = false;
+    }
+
+    public void EndDrawing()
+    {
+        Console.CursorVisible = true;
+    }
+}</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>Цей файл містить клас <code>ConsolePainter</code>, який відповідає за відображення графічних елементів на екрані консолі для створення графічного інтерфейсу гри. Основні функції цього класу:</p><div class='theme-additional-html-content-container'><ol class="theme-list"><li><p><strong>Кольори та символи:</strong> Клас зберігає масиви кольорів (<code>DrawColors</code>) та символів (<code>DrawChars</code>), які використовуються для малювання елементів гри на консолі.</p></li><li><p><strong>Відображення тексту:</strong> Метод <code>DrawTextData</code> відповідає за вивід текстових даних на екран консолі, розміщуючи їх у відповідному місці.</p></li><li><p><strong>Малювання границь:</strong> Функція <code>DrawBordersForMatrix</code> створює рамки навколо матриці, яка використовується для відображення елементів гри.</p></li><li><p><strong>Малювання матриці:</strong> Метод <code>DrawByteMatrixToConsole</code> відповідає за відображення байтової матриці на екрані консолі. Це основний метод для відображення графічних об'єктів гри.</p></li><li><p><strong>Налаштування за замовчуванням:</strong> Конструктори класу <code>ConsolePainter</code> ініціалізують значення за замовчуванням для кольорів та символів, які використовуються для малювання елементів гри.</p></li><li><p><strong>Завершення малювання:</strong> Метод <code>EndDrawing</code> встановлює видимість курсора на консолі, викликаючи його завершення малювання.</p></li></ol></div><p class='theme-text-container theme-text-container-code-comment'>Цей клас використовується для керування візуальною частиною гри у консольному середовищі, дозволяючи відображати та оновлювати елементи гри на екрані консолі.</p><div class='theme-additional-html-content-container'><hr class='theme-line'></div><p class='theme-text-container theme-text-container-code-comment'><strong>GameBoard.cs:</strong></p><div class='code-pre-container'><pre><code class='language-cs'>// Клас, що репрезентує ігрову дошку
+public class GameBoard
+{
+    public int Width { get; set; }   // Ширина ігрової дошки
+    public int Height { get; set; }  // Висота ігрової дошки
+
+    public byte[,] Matrix { get; set; }  // Матриця для зберігання значень на дошці
+
+    // Метод для встановлення прямокутника з певним значенням на дошці
+    public void SetReactangle(int x, int y, int width, int height, byte value)
+    {
+        for (int iY = y; iY &lt; y + height; iY++)
+        {
+            for (int iX = x; iX &lt; x + width; iX++)
+            {
+                Matrix[iY, iX] = value; // Встановлення значення у відповідних координатах матриці
+            }
+        }
+    }
+
+    // Метод для очищення матриці (заповнення нулями)
+    public void ClearMatrix()
+    {
+        FillArray&lt;byte&gt;(Matrix, 0); // Заповнення матриці нулями
+    }
+
+    // Конструктор, що ініціалізує ігрову дошку з вказаною шириною та висотою
+    public GameBoard(int width, int height)
+    {
+        Width = width;
+        Height = height;
+
+        Matrix = new byte[Height, Width]; // Створення матриці заданого розміру
+    }
+
+    // Статичний метод для заповнення двовимірного масиву певним значенням
+    public static void FillArray&lt;T&gt;(T[,] array, T value)
+    {
+        for (int i = 0; i &lt; array.GetLength(0); i++)
+        {
+            for (int j = 0; j &lt; array.GetLength(1); j++)
+            {
+                array[i, j] = value; // Заповнення масиву певним значенням
+            }
+        }
+    }
+}
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>Цей клас <code>GameBoard</code> репрезентує ігрову дошку у грі. Основні його характеристики та функції:</p><div class='theme-additional-html-content-container'><ol class="theme-list"><li><p><strong>Ширина та висота:</strong> Властивості <code>Width</code> та <code>Height</code> визначають розміри ігрової дошки.</p></li><li><p><strong>Матриця для зберігання значень:</strong> <code>Matrix</code> - двовимірний масив типу <code>byte</code>, що використовується для зберігання значень на самій дошці.</p></li><li><p><strong>Встановлення прямокутника на дошці:</strong> Метод <code>SetRectangle</code> дозволяє встановити певне значення у вказаному прямокутнику на дошці, заданим його початковою точкою <code>(x, y)</code> та розмірами <code>(width, height)</code>.</p></li><li><p><strong>Очищення матриці:</strong> Метод <code>ClearMatrix</code> заповнює всю матрицю нулями, ефективно очищаючи її.</p></li><li><p><strong>Ініціалізація ігрової дошки:</strong> Конструктор <code>GameBoard</code> створює об'єкт ігрової дошки заданого розміру, ініціалізуючи матрицю відповідним чином.</p></li><li><p><strong>Статичний метод для заповнення масиву значеннями:</strong> Метод <code>FillArray</code> використовується для заповнення будь-якого двовимірного масиву певним значенням.</p></li></ol></div><p class='theme-text-container theme-text-container-code-comment'>Цей клас є фундаментальним елементом гри, оскільки він визначає простір, у якому розміщуються та взаємодіють ігрові об'єкти, і надає функціонал для їх розміщення та очищення на ігровій дошці.</p><div class='theme-additional-html-content-container'><hr class='theme-line'></div><p class='theme-text-container theme-text-container-code-comment'><strong>GameObject.cs:</strong></p><div class='code-pre-container'><pre><code class='language-cs'>// Клас, який репрезентує ігровий об'єкт
+public class GameObject
+{
+    public int X { get; set; } = 0;  // Позиція по осі X
+    public int Y { get; set; } = 0;  // Позиція по осі Y
+
+    // Віртуальний метод, що перевіряє колізію з іншим об'єктом
+    public virtual bool IsCollidingWith(GameObject gameObject)
+    {
+        bool result = gameObject.X == X && gameObject.Y == Y; // Перевірка на співпадіння позицій
+        return result;
+    }
+
+    // Конструктор без параметрів, встановлює початкові значення позиції
+    public GameObject()
+    {
+        X = 0;
+        Y = 0;
+    }
+
+    // Конструктор з параметрами, встановлює позицію за заданими координатами
+    public GameObject(int x, int y)
+    {
+        X = x;
+        Y = y;
+    }
+}</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>Цей клас <code>GameObject</code> репрезентує основні властивості та функціонал для будь-якого ігрового об'єкта в грі:</p><div class='theme-additional-html-content-container'><ol class="theme-list"><li><p><strong>Позиція об'єкта:</strong> Клас має властивості <code>X</code> та <code>Y</code>, які визначають позицію об'єкта на ігровому полі по відповідним координатам X та Y.</p></li><li><p><strong>Перевірка на колізію:</strong> Метод <code>IsCollidingWith</code> є віртуальним і дозволяє перевірити, чи стикається поточний об'єкт з іншим об'єктом. Він порівнює координати двох об'єктів, щоб визначити, чи знаходяться вони на одній позиції.</p></li><li><p><strong>Конструктори:</strong> Клас має два конструктори: один без параметрів, який встановлює початкові значення позиції об'єкта (0, 0), та інший з параметрами, який дозволяє встановити позицію об'єкта за заданими координатами при створенні нового об'єкта.</p></li></ol></div><p class='theme-text-container theme-text-container-code-comment'>Цей клас є базовим для будь-якого ігрового об'єкта у грі. Він визначає основні атрибути та функції, які можна розширювати для створення різноманітних типів об'єктів у грі.</p><div class='theme-additional-html-content-container'><hr class='theme-line'></div><p class='theme-text-container theme-text-container-code-comment'><strong>UserInputManager.cs:</strong></p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+using System.Collections.Generic;
+using System.Threading;
+
+public class UserInputManager
+{
+    private bool RunMonitorAndCleanerThread { get; set; } = false; // Прапорець для керування роботою потоків
+    private Thread MonitorThread { get; set; } // Потік для моніторингу введення
+    private Thread CleanerThread { get; set; } // Потік для очищення даних
+
+    public List&lt;ConsoleKeyAndTime&gt; PressedKeys = new List&lt;ConsoleKeyAndTime&gt;(); // Список натиснутих клавіш
+
+    // Метод, який перевіряє, чи натиснута певна клавіша за символьним значенням
+    public bool IsKeyPressed(char key)
+    {
+        return IsKeyPressed(key);
+    }
+
+    // Метод, який перевіряє, чи натиснута певна клавіша за рядковим значенням
+    public bool IsKeyPressed(string key)
+    {
+        bool result = false;
+
+        // Перебір усіх натиснутих клавіш для перевірки співпадіння з введеним значенням
+        for (int i = 0; i &lt; PressedKeys.Count; i++)
+        {
+            if (PressedKeys[i].ConsoleKey.ToString() == key)
+            {
+                PressedKeys.RemoveAt(i); // Видалення клавіші зі списку
+                result = true;
+                break;
+            }
+        }
+
+        return result;
+    }
+
+    // Метод для початку моніторингу натиснутих клавіш
+    public void StartMonitoring()
+    {
+        RunMonitorAndCleanerThread = true;
+        MonitorThread.Start(); // Запуск потоку моніторингу
+        CleanerThread.Start(); // Запуск потоку очищення
+    }
+
+    // Метод для зупинки моніторингу натиснутих клавіш
+    public void StopMonitoring()
+    {
+        RunMonitorAndCleanerThread = false;
+    }
+
+    // Функція потоку моніторингу
+    public void MonitorThreadFunction()
+    {
+        while (RunMonitorAndCleanerThread)
+        {
+            ConsoleKey input = Console.ReadKey(true).Key; // Отримання натиснутої клавіші
+
+            long timeNow = DateTime.Now.Ticks; // Отримання поточного часу
+
+            bool alreadyInBuffer = false;
+            int inBufferId = 0;
+
+            // Перевірка наявності клавіші в буфері натиснутих клавіш
+            for (int i = 0; i &lt; PressedKeys.Count; i++)
+            {
+                if (!alreadyInBuffer && input == PressedKeys[i].ConsoleKey)
+                {
+                    alreadyInBuffer = true;
+                    inBufferId = i;
+                }
+            }
+
+            // Оновлення часу натискання клавіші або додавання нової клавіші в буфер
+            if (alreadyInBuffer)
+            {
+                PressedKeys[inBufferId].PressTime = timeNow;
+            }
+            else
+            {
+                PressedKeys.Add(new ConsoleKeyAndTime(input, timeNow));
+            }
+        }
+        Console.WriteLine("Кінець функції потоку моніторингу");
+    }
+
+    // Функція потоку очищення
+    public void CleanerThreadFunction()
+    {
+        while (RunMonitorAndCleanerThread)
+        {
+            Thread.Sleep(10); // Пауза для ефективного використання ресурсів
+
+            long timeNow = DateTime.Now.Ticks; // Отримання поточного часу
+
+            // Перевірка часу натискання клавіш для їхнього видалення зі списку
+            for (int i = 0; i &lt; PressedKeys.Count; i++)
+            {
+                if (PressedKeys[i].PressTime + 5000000 &lt; timeNow)
+                {
+                    PressedKeys.RemoveAt(i); // Видалення клавіші зі списку
+                }
+            }
+        }
+        Console.WriteLine("Кінець функції потоку очищення");
+    }
+
+    // Конструктор класу
+    public UserInputManager()
+    {
+        MonitorThread = new Thread(() =&gt; MonitorThreadFunction()); // Ініціалізація потоку моніторингу
+        CleanerThread = new Thread(() =&gt; CleanerThreadFunction()); // Ініціалізація потоку очищення
+    }
+}
+
+// Клас, що репрезентує натиснуту клавішу і час натискання
+public class ConsoleKeyAndTime
+{
+    public ConsoleKey ConsoleKey { get; set; } // Клавіша консолі
+    public long PressTime { get; set; } // Час натискання клавіші
+
+    // Конструктор класу
+    public ConsoleKeyAndTime(ConsoleKey consoleKey, long pressTime)
+    {
+        ConsoleKey = consoleKey;
+        PressTime = pressTime;
+    }
+}
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>Цей файл містить клас <code>UserInputManager</code>, який відповідає за отримання введення користувача з консолі у формі клавішних натискань. Основні функції цього класу:</p><div class='theme-additional-html-content-container'><ol class="theme-list"><li><p><strong>Моніторинг клавішних натискань:</strong> Метод <code>MonitorThreadFunction</code> запускає потік, який безперервно чекає на натискання клавіш користувачем. Коли клавіша натиснута, вона додається до списку <code>PressedKeys</code> разом з часом натискання.</p></li><li><p><strong>Очищення клавішних натискань:</strong> Метод <code>CleanerThreadFunction</code> також працює у власному потоці, видаляючи клавіші, які зберігаються у списку <code>PressedKeys</code> після певного періоду часу.</p></li><li><p><strong>Початок та завершення моніторингу:</strong> Методи <code>StartMonitoring</code> та <code>StopMonitoring</code> відповідають відповідно за запуск та зупинку потоків моніторингу натискань.</p></li><li><p><strong>Перевірка натискання клавіш:</strong> Методи <code>IsKeyPressed(char key)</code> та <code>IsKeyPressed(string key)</code> дозволяють перевіряти, чи була натиснута певна клавіша за символьним або рядковим значенням.</p></li><li><p><strong>Конструктор та клас <code>ConsoleKeyAndTime</code>:</strong> Конструктор <code>UserInputManager</code> ініціалізує потоки моніторингу та очищення. Клас <code>ConsoleKeyAndTime</code> використовується для репрезентації натиснутої клавіші та часу її натискання.</p></li></ol></div><p class='theme-text-container theme-text-container-code-comment'>Цей клас дозволяє відстежувати та обробляти клавішні натискання користувача у консольному додатку, використовуючи окремі потоки для моніторингу та очищення введення.</p><p class='theme-text-container theme-text-container-code-comment'><a class='theme-a' href='https://drive.google.com/drive/folders/1C28oB4h6zRB5tQqomX5tM1tBymi_MBZe?usp=sharing'>Посилання на файли бібліотеки.</a></p></div></div></div></div><div class='theme-main-container' align='center'><h1 class='theme-header'>Огляд гри написаної з використання <code>ConsoleGameEngine</code> - Загальний огляд файлів</h1><p class='theme-text-container theme-text-container-info'>Файли <code>ConsoleGameExample</code> - опис, структура, логіка.</p><div class='theme-additional-content-container-main'><button class='button-main theme-additional-content-expander'>Показати</button><div class='theme-additional-content-container collapsed'><div class='code-and-explanation-container'><p class='theme-text-container theme-text-container-code-comment'><strong>ConsoleGameExample.csproj:</strong></p><div class='code-pre-container'><pre><code class='language-cs'>&lt;Project Sdk="Microsoft.NET.Sdk"&gt;
+    &lt;ItemGroup&gt;
+        &lt;ProjectReference Include="..\ConsoleGameEngine\ConsoleGameEngine.csproj" /&gt;
+    &lt;/ItemGroup&gt;
+    &lt;PropertyGroup&gt;
+        &lt;OutputType&gt;Exe&lt;/OutputType&gt;
+        &lt;TargetFramework&gt;net8.0&lt;/TargetFramework&gt;
+        &lt;ImplicitUsings&gt;disabled&lt;/ImplicitUsings&gt;
+        &lt;Nullable&gt;enable&lt;/Nullable&gt;
+    &lt;/PropertyGroup&gt;
+&lt;/Project&gt;
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>Цей файл <code>ConsoleGameExample.csproj</code> є проєктним файлом у форматі XML, який визначає конфігурацію проєкту для платформи .NET SDK. Основні елементи цього файлу:</p><div class='theme-additional-html-content-container'><ol class="theme-list"><li><p><strong><code>&lt;Project Sdk="Microsoft.NET.Sdk"&gt;</code>:</strong> Вказує, що цей проєкт базується на SDK для платформи .NET.</p></li><li><p><strong><code>&lt;ItemGroup&gt;</code> з <code>&lt;ProjectReference&gt;</code>:</strong> Визначає посилання на інший проєкт у рішенні. У даному випадку, цей проєкт має посилання на <code>ConsoleGameEngine.csproj</code>, що означає залежність від цього проєкту.</p></li><li><p><strong><code>&lt;PropertyGroup&gt;</code> з конфігурацією проєкту:</strong> Встановлює ряд властивостей проєкту:</p><ul class="theme-list-inside"><li><code>OutputType</code> вказує тип вихідного файлу проєкту (Exe - виконуваний файл).</li><li><code>TargetFramework</code> визначає версію .NET Framework, для якої буде збудований проєкт (<code>net8.0</code>).</li><li><code>ImplicitUsings</code> визначає використання неявних директив імпорту для імен просторів імен (в даному випадку вимкнено).</li><li><code>Nullable</code> встановлює ступінь включення можливості використання null-анотацій.</li></ul></li></ol></div><p class='theme-text-container theme-text-container-code-comment'>Цей файл містить важливу інформацію для побудови та налаштування проєкту, зокрема вказує на залежності від інших проєктів і налаштовує параметри збірки проєкту.</p><div class='theme-additional-html-content-container'><hr class='theme-line'></div><p class='theme-text-container theme-text-container-code-comment'><strong>Public.cs:</strong></p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+using System.Collections.Generic;
+
+// Статичний клас P, що містить глобальні змінні та об'єкти для гри
+public static class P
+{
+    public static int LoopCounterBlocks = 0;  // Лічильник для логіки блоків у циклі
+
+    public static bool GameIsRunning = true;  // Змінна, що вказує, чи триває гра
+    public static int Score = 0;  // Змінна для збереження рахунку гравця
+
+    public static ConsolePainter Painter = new ConsolePainter();  // Об'єкт для відображення в консолі
+    public static UserInputManager UserInputManager = new UserInputManager();  // Об'єкт для управління вводом користувача
+
+    public static GameBoard GameBoard = new GameBoard(90, 30);  // Ігрова дошка з визначеними розмірами
+    public static GamePlayer GamePlayer = new GamePlayer(0, 0);  // Об'єкт гравця з визначеними координатами
+    public static int TargetGamePointsCount = 20; // Бажана(максимальна) кількість балів які можуть одночасно існувати на ігровому полі 
+    public static List&lt;GamePoint&gt; GamePoints = new List&lt;GamePoint&gt;();  // Список балів які може збирати гравець
+}
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>Файл <code>Public.cs</code> управляє глобальними об'єктами та змінними, що використовуються в проєкті, який використовує <code>ConsoleGameEngine</code>. Основні елементи файлу:</p><div class='theme-additional-html-content-container'><ol class="theme-list"><li><p><strong>Керування грою:</strong> <code>P.GameIsRunning</code> вказує, чи триває гра. Ця змінна дозволяє визначити, чи продовжувати головний цикл гри.</p></li><li><p><strong>Відображення в консолі:</strong> <code>P.Painter</code> відповідає за відображення елементів гри в консолі. Цей об'єкт здійснює різні операції, такі як малювання символів, текстових даних та рамок.</p></li><li><p><strong>Управління введенням користувача:</strong> <code>P.UserInputManager</code> слідкує за введенням користувача через консоль. Це дозволяє гравцю взаємодіяти з грою через клавіатуру.</p></li><li><p><strong>Ігрова дошка та гравець:</strong> <code>P.GameBoard</code> представляє ігрову дошку з визначеними розмірами. <code>P.GamePlayer</code> відображає гравця на цій дошці.</p></li><li><p><strong>Рахунок та бали:</strong> <code>P.Score</code> зберігає поточний рахунок гравця. <code>P.TargetGamePointsCount</code> вказує максимальну кількість балів, які можуть одночасно існувати на ігровому полі.</p></li></ol></div><p class='theme-text-container theme-text-container-code-comment'>Цей файл створює статичний клас <code>P</code>, який містить різні об'єкти та змінні, необхідні для функціонування гри, підключеної до <code>ConsoleGameEngine</code>.</p><div class='theme-additional-html-content-container'><hr class='theme-line'></div><p class='theme-text-container theme-text-container-code-comment'><strong>Program.cs:</strong></p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+using System.Collections.Generic;
+using System.Threading;
+
+namespace ConsoleGameExample
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Початок моніторингу введення користувача
+            P.UserInputManager.StartMonitoring();
+
+            // Ініціалізація символів для малювання та встановлення кольорів
+            P.Painter.DrawChars[0] = ' ';
+            P.Painter.DrawChars[1] = '%';
+            P.Painter.DrawChars[2] = '+';
+            P.Painter.DrawColors[1] = ConsoleColor.Green;
+            P.Painter.DrawColors[2] = ConsoleColor.Red;
+
+            // Встановлення кольору рамки
+            P.Painter.BorderColor = ConsoleColor.Yellow;
+
+            // Додавання текстових даних для малювання
+            P.Painter.TextDataToDraw.Add(new string[] { "X", "test_val" });
+            P.Painter.TextDataToDraw.Add(new string[] { "Y", "test_val" });
+            P.Painter.TextDataToDraw.Add(new string[] { "Score", "0" });
+
+            // Встановлення початкових координат персонажа
+            P.GamePlayer.X = P.GameBoard.Width / 4;
+            P.GamePlayer.Y = P.GameBoard.Height / 2;
+
+            // Головний цикл гри
+            MainLoop();
+
+            // Зупинка моніторингу введення користувача та завершення малювання
+            P.UserInputManager.StopMonitoring();
+            P.Painter.EndDrawing();
+        }
+
+        public static void MainLoop()
+        {
+            while (P.GameIsRunning)
+            {
+                Thread.Sleep(50);
+                P.GameBoard.ClearMatrix();
+
+                // Обробка балів
+                GamePointsInLoop();
+
+                // Оновлення положення персонажа
+                GamePlayerInLoop();
+
+                P.Painter.TextDataToDraw[2][1] = P.Score.ToString();
+
+                // Малювання матриці у консоль
+                P.Painter.DrawByteMatrixToConsole(P.GameBoard.Matrix, true);
+            }
+        }
+
+        private static void GamePointsInLoop()
+        {
+            // Додавання випадкових геймпоінтів, поки не досягнуто потрібну кількість
+            if (P.GamePoints.Count &lt; P.TargetGamePointsCount)
+            {
+                P.GamePoints.Add(GamePoint.GetNewRandomPoint(P.GameBoard));
+            }
+
+            // Перевірка колізій геймпоінтів з гравцем та їх видалення у разі зіткнення
+            // А також відображення геймпоінтів на ігровій дошці
+            for (int i = 0; i &lt; P.GamePoints.Count; i++)
+            {
+                if (P.GamePoints[i].IsCollidingWith(P.GamePlayer))
+                {
+                    P.GamePoints.RemoveAt(i);
+                    P.Score++;
+                }
+                else
+                {
+                    P.GameBoard.Matrix[P.GamePoints[i].Y, P.GamePoints[i].X] = 2;
+                }
+            }
+        }
+
+
+        private static void GamePlayerInLoop()
+        {
+            // Керування персонажем та оновлення його положення
+            P.GamePlayer.Control(P.UserInputManager, P.GameBoard);
+            P.GamePlayer.OneTick();
+
+            // Оновлення текстових даних про положення персонажа та його місцезнаходження на ігровій дошці
+            P.Painter.TextDataToDraw[0][1] = Convert.ToString(P.GamePlayer.X);
+            P.Painter.TextDataToDraw[1][1] = Convert.ToString(P.GamePlayer.Y);
+            P.GameBoard.Matrix[P.GamePlayer.Y, P.GamePlayer.X] = 1;
+        }
+    }
+}
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>Цей файл <code>Program.cs</code> керує основним ходом програми, яка використовує бібліотеку <code>ConsoleGameEngine</code>. Основні елементи файлу:</p><div class='theme-additional-html-content-container'><ol class="theme-list"><li><p><strong><code>Main</code> метод:</strong> Це вхідна точка програми. Він починає моніторинг введення користувача, ініціалізує символи для малювання, встановлює кольори та додає текстові дані для малювання в консоль. Також встановлюються початкові координати персонажа і запускається головний цикл гри.</p></li><li><p><strong><code>MainLoop</code> метод:</strong> Це головний цикл гри. Він продовжується, доки гра продовжується (<code>P.GameIsRunning</code>). У цьому циклі очищується ігрова дошка, обробляються геймпоінти та оновлюється положення персонажа, а потім матриця малюється у консоль.</p></li><li><p><strong>Методи обробки геймпоінтів та персонажа:</strong> <code>GamePointsInLoop</code> відповідає за додавання випадкових геймпоінтів та їх взаємодію з гравцем. <code>GamePlayerInLoop</code> відповідає за керування персонажем та оновлення його положення на ігровій дошці.</p></li></ol></div><p class='theme-text-container theme-text-container-code-comment'>Цей файл забезпечує основну логіку гри, яка використовує <code>ConsoleGameEngine</code>, включаючи обробку введення користувача, оновлення гри та відображення її елементів у консольному інтерфейсі.</p><div class='theme-additional-html-content-container'><hr class='theme-line'></div><p class='theme-text-container theme-text-container-code-comment'><strong>GamePoint.cs:</strong></p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+
+public class GamePoint : GameObject
+{
+    public static Random Random = new Random();  // Об'єкт для генерації випадкових чисел
+
+    // Статичний метод, який повертає нову випадкову точку на ігровій дошці
+    public static GamePoint GetNewRandomPoint(GameBoard GameBoard)
+    {
+        int x = 0;
+        int y = 0;
+
+        // Генеруємо випадкові координати для точки в межах ширини та висоти ігрової дошки
+        x = Random.Next(0, GameBoard.Width);
+        y = Random.Next(0, GameBoard.Height);
+
+        return new GamePoint(x, y); // Повертаємо новий об'єкт GamePoint з випадковими координатами
+    }
+
+    // Конструктор класу GamePoint, що приймає координати X та Y для створення нової точки
+    public GamePoint(int X, int Y) : base(X, Y){}
+}
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>Файл <code>GamePoint.cs</code> містить клас <code>GamePoint</code>, що представляє точку на ігровій дошці. Основні елементи файлу:</p><div class='theme-additional-html-content-container'><ol class="theme-list"><li><p><strong>Успадкування від <code>GameObject</code>:</strong> <code>GamePoint</code> успадковує функціонал від класу <code>GameObject</code>, який містить базові властивості об'єктів у грі.</p></li><li><p><strong>Створення нової випадкової точки:</strong> Метод <code>GetNewRandomPoint</code> створює новий об'єкт <code>GamePoint</code> з випадковими координатами на ігровій дошці. Використовується об'єкт <code>Random</code>, щоб генерувати координати всередині меж ширини та висоти ігрової дошки.</p></li><li><p><strong>Конструктор класу <code>GamePoint</code>:</strong> Приймає координати X та Y для створення нової точки на ігровій дошці.</p></li></ol></div><p class='theme-text-container theme-text-container-code-comment'>Цей файл надає методи для створення нових випадкових точок на ігровій дошці, що дозволяє динамічно розміщувати об'єкти у грі.</p><div class='theme-additional-html-content-container'><hr class='theme-line'></div><p class='theme-text-container theme-text-container-code-comment'><strong>GamePlayer.cs:</strong></p><div class='code-pre-container'><pre><code class='language-cs'>using System;
+
+public class GamePlayer : GameObject
+{
+    public int TickCounter = 0; // Лічильник тиків
+
+    public GamePlayer() : base(){} // Конструктор за замовчуванням
+
+    public GamePlayer(int x, int y) : base(x, y){} // Конструктор з параметрами
+
+    public virtual void Control(UserInputManager userInputManager, GameBoard gameBoard)
+    {
+        if (Y &lt; gameBoard.Height - 1 && userInputManager.IsKeyPressed("S"))
+        {
+            Y++; // Зміщення вниз
+        }
+
+        if (Y &gt; 0 && userInputManager.IsKeyPressed("W"))
+        {
+            Y--; // Зміщення вгору
+        }
+
+        if (X &lt; gameBoard.Width - 1 && userInputManager.IsKeyPressed("D"))
+        {
+            X++; // Зміщення вправо
+        }
+
+        if (X &gt; 0 && userInputManager.IsKeyPressed("A"))
+        {
+            X--; // Зміщення вліво
+        }
+    }
+
+    public virtual void OneTick(){
+        TickCounter++; // Інкрементування лічильник тиків
+        if (TickCounter &gt;= 1000)
+        {
+            TickCounter = 0; // Обнулити лічильник при досягненні межі
+        }
+    }
+}
+</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>Файл <code>GamePlayer.cs</code> визначає клас <code>GamePlayer</code>, який представляє гравця в грі. Основні аспекти цього класу:</p><div class='theme-additional-html-content-container'><ol class="theme-list"><li><p><strong>Координати та лічильник тиків:</strong> <code>GamePlayer</code> має поля <code>X</code> та <code>Y</code>, що представляють його координати на ігровій дошці. <code>TickCounter</code> відстежує кількість тиків або кроків гравця.</p></li><li><p><strong>Конструктори:</strong> Є два конструктори: один за замовчуванням та інший із визначенням початкових координат гравця.</p></li><li><p><strong>Методи управління:</strong> <code>Control</code> приймає об'єкти <code>UserInputManager</code> та <code>GameBoard</code> для обробки введення гравця та керування його рухом в межах ігрового поля. Гравець може рухатися вгору, вниз, вліво та вправо в залежності від введених клавіш.</p></li><li><p><strong>Один тик:</strong> <code>OneTick</code> викликається кожен тик гри та інкрементує <code>TickCounter</code>. При досягненні <code>TickCounter</code> значення 1000, лічильник обнуляється.</p></li></ol></div><p class='theme-text-container theme-text-container-code-comment'>Клас <code>GamePlayer</code> відображає гравця на ігровому полі та реагує на введення користувача, виконуючи відповідні дії в межах ігрового середовища.</p><p class='theme-text-container theme-text-container-code-comment'><a class='theme-a' href='https://drive.google.com/drive/folders/1H78G6Mvm47XgEWX1h-G5ZJEfEByRGmmz?usp=sharing'>Посилання на файли гри.</a></p></div></div></div></div><div class='theme-main-container' align='center'><h1 class='theme-header'>Огляд гри написаної з використання <code>ConsoleGameEngine</code> - Загальний огляд її логіки</h1><p class='theme-text-container theme-text-container-info'>Логіка <code>ConsoleGameExample</code> - опис, структура.</p><div class='theme-additional-content-container-main'><button class='button-main theme-additional-content-expander'>Показати</button><div class='theme-additional-content-container collapsed'><div class='code-and-explanation-container'><p class='theme-text-container theme-text-container-code-comment'>Код <code>Program.cs</code> відповідає за виконання основного циклу гри та містить наступні етапи:</p><div class='theme-additional-html-content-container'><ol class="theme-list"><li><p><strong>Початок гри:</strong></p><div class='code-pre-container'><pre><code class='language-cs'>P.UserInputManager.StartMonitoring();
+</code></pre></div><p>Починається моніторинг введення користувача за допомогою <code>UserInputManager</code>.</p></li><li><p><strong>Ініціалізація візуальних елементів:</strong></p><div class='code-pre-container'><pre><code class='language-cs'>P.Painter.DrawChars[0] = ' ';
+P.Painter.DrawChars[1] = '%';
+P.Painter.DrawChars[2] = '+';
+P.Painter.DrawColors[1] = ConsoleColor.Green;
+P.Painter.DrawColors[2] = ConsoleColor.Red;
+P.Painter.BorderColor = ConsoleColor.Yellow;
+P.Painter.TextDataToDraw.Add(new string[] { "X", "test_val" });
+P.Painter.TextDataToDraw.Add(new string[] { "Y", "test_val" });
+P.Painter.TextDataToDraw.Add(new string[] { "Score", "0" });
+</code></pre></div><p>Здійснюється ініціалізація параметрів для малювання в консолі через об'єкт <code>ConsolePainter</code>.</p></li><li><p><strong>Ініціалізація гравця:</strong></p><div class='code-pre-container'><pre><code class='language-cs'>P.GamePlayer.X = P.GameBoard.Width / 4;
+P.GamePlayer.Y = P.GameBoard.Height / 2;
+</code></pre></div><p>Встановлюються початкові координати гравця на ігровій дошці.</p></li><li><p><strong>Головний цикл гри (<code>MainLoop</code>):</strong></p><div class='code-pre-container'><pre><code class='language-cs'>while (P.GameIsRunning)
+{
+    Thread.Sleep(50);
+    P.GameBoard.ClearMatrix();
+    GamePointsInLoop();
+    GamePlayerInLoop();
+    P.Painter.TextDataToDraw[2][1] = P.Score.ToString();
+    P.Painter.DrawByteMatrixToConsole(P.GameBoard.Matrix, true);
+}
+</code></pre></div><p>Головний ігровий цикл, який працює, поки <code>P.GameIsRunning</code> залишається <code>true</code>.</p></li><li><p><strong>Обробка геймпоінтів (<code>GamePointsInLoop</code>):</strong></p><div class='code-pre-container'><pre><code class='language-cs'>if (P.GamePoints.Count &lt; P.TargetGamePointsCount)
+{
+    P.GamePoints.Add(GamePoint.GetNewRandomPoint(P.GameBoard));
+}
+
+for (int i = 0; i &lt; P.GamePoints.Count; i++)
+{
+    if (P.GamePoints[i].IsCollidingWith(P.GamePlayer))
+    {
+        P.GamePoints.RemoveAt(i);
+        P.Score++;
+    }
+    else
+    {
+        P.GameBoard.Matrix[P.GamePoints[i].Y, P.GamePoints[i].X] = 2;
+    }
+}
+</code></pre></div><p>Додаються нові геймпоінти на ігрову дошку, перевіряється колізія геймпоінтів з гравцем, та оновлюється рахунок.</p></li><li><p><strong>Оновлення гравця (<code>GamePlayerInLoop</code>):</strong></p><div class='code-pre-container'><pre><code class='language-cs'>P.GamePlayer.Control(P.UserInputManager, P.GameBoard);
+P.GamePlayer.OneTick();
+P.Painter.TextDataToDraw[0][1] = Convert.ToString(P.GamePlayer.X);
+P.Painter.TextDataToDraw[1][1] = Convert.ToString(P.GamePlayer.Y);
+P.GameBoard.Matrix[P.GamePlayer.Y, P.GamePlayer.X] = 1;
+</code></pre></div><p>Гравець керується за допомогою клавіш, оновлюється його положення та відображення на ігровій дошці.</p></li><li><p><strong>Малювання гри в консолі:</strong></p><div class='code-pre-container'><pre><code class='language-cs'>P.Painter.DrawByteMatrixToConsole(P.GameBoard.Matrix, true);
+</code></pre></div><p>Матриця ігрової дошки відображається в консолі через метод <code>DrawByteMatrixToConsole</code>.</p></li><li><p><strong>Зупинка гри:</strong></p><div class='code-pre-container'><pre><code class='language-cs'>P.UserInputManager.StopMonitoring();
+P.Painter.EndDrawing();
+</code></pre></div><p>Зупиняється моніторинг введення користувача та завершується малювання в консолі.</p></li></ol></div></div></div></div></div></div><div id='templatemo_footer_wrapper'>    <div id='templatemo_footer'>Copyright © 2022 WebSkill - Всі права захищено.</div></div></body></html>

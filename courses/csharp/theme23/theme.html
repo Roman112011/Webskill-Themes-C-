@@ -1,0 +1,280 @@
+<html><head><title>Тема 23 Avalonia 3</title><meta charset="utf-8"><link rel="icon" href="../../../images/favicon.png" type="image/x-icon"><link rel='stylesheet' href='../../../styles/prism.css'><link rel='stylesheet' href='../../../styles/master.css'><link rel='stylesheet' href='styles/style.css'><script src='https://code.jquery.com/jquery-3.6.0.min.js' defer=""></script><script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js' defer=""></script><script src='../../../scripts/activate_highlight.js' defer=""></script><script src='../../../scripts/additional_content_button.js' defer=""></script></head><body><div id='templatemo_header_wrapper'>    <div id='templatemo_header'>        <div id='header'>            <br>            <h1 align='center'><a href='#' class='themeA'>Тема 23<br>Avalonia - UI 3 Layout, Grid</a></h1><br>        </div>    </div></div><div class='content'><div class='theme-main-container debug-compile-info-cont' align='center'><p class='theme-main-header debug-compile-info-header'>Complie info</p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>ExecutableCreationTime</span>:<br><span class='debug-compile-info-entry-value attention-code'>03/27/2024 02:09:19</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>ExecutableLastWriteTime</span>:<br><span class='debug-compile-info-entry-value attention-code'>03/27/2024 02:09:19</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>ExecutableHashSHA256</span>:<br><span class='debug-compile-info-entry-value attention-code'>EF45B86474B6E4747501AAB037C01F7D6B1FE6DC5824305E2659CDA47943263A</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>SettingsHashSHA256</span>:<br><span class='debug-compile-info-entry-value attention-code'>F6D9CFAB2E7B5CC5152D66D4C0D51EC04FCF0BB9BE5A805C42FBABC64EACC089</span></p><br><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>AppStartDate</span>:<br><span class='debug-compile-info-entry-value attention-code'>2024-03-27 00:23:57.483</span></p><br><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>StylesHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>D874A857C9AE35986454587CF15ED802E0DA670AA6BCBF2B7311FA7D0367145E</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>ScriptsHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>B2860447F9AF448ED6C9353FCAD64AB324ABFB5D42697A9CA3F1A2C9535129E8</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>AdditionalHeadContentHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>CDB97F7F404FBF14B9786071235C8E643776E7B3C78B6A356497F4AFAF322B64</span></p><br><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>InfoMaterialThemeConfigStringHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>E7E59D367F3E965AC77189078D9693892BB9AEF7589E60DED0BC7317CBD858E6</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>HtmlTextFormaterStringHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>28B3A0CC4562C9CE905709866A3BB776DB598BA3291AAEA0033E81382ACCAE3A</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>GlobalHtmlTextFormaterStringHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>0BD3178F0EB6CF62ED1234C263E422988E2A6CAE5285B6BB27A1CA5F526093C7</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>HeaderHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>9E4B3F1397C37693AF319C23C8F060DE91A17F60A58AFE3CAF18B2FF6C4ADD63</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>FooterHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>B8EA0644585A6D27C6B10FD167809CF1F1884EDC0374A494362B16876CE98B96</span></p><p class='theme-main-header debug-compile-info-entry'><span class='debug-compile-info-entry-name'>AdditionalMainDivContentHash</span>:<br><span class='debug-compile-info-entry-value attention-code'>D05224365F5F8632B8AC84C4032E59B7F61910A18D95DEB5F1C54140777D314C</span></p></div><div class="workaround-div-for-compile-only">    <div class="theme-main-container chapter-selector-container">        <a class="button-main chapter-selector-link" href="theme.html">            <p class="chapter-selector-text">Теорія</p>        </a>        <a class="button-main chapter-selector-link" href="tasks.html">            <p class="chapter-selector-text">Завдання</p>        </a>    </div></div><div class='theme-main-container' align='center'><p class='theme-main-header'>Grid та його використання</p></div><div class='theme-main-container' align='center'><h1 class='theme-header'><span class='attention-code'>Grid</span> та його участь в <span class='attention-highlight'>layout</span>'уті</h1><p class='theme-text-container theme-text-container-info'>Що таке <span class='attention-code'>Grid</span> та як його використовувати?</p><div class='theme-additional-content-container-main'><button class='button-main theme-additional-content-expander'>Показати</button><div class='theme-additional-content-container collapsed'><div class='code-and-explanation-container'><p class='theme-text-container theme-text-container-code-comment'><span class='attention-highlight'>Layout</span> (структура) - це важливий аспект розробки програмного забезпечення, який визначає, як елементи інтерфейсу користувача розташовуються на екрані. Правильно використаний <span class='attention-highlight'>layout</span> допомагає зробити ваші додатки більш зручними та легкими у використанні для користувачів.</p><p class='theme-text-container theme-text-container-code-comment'><strong><span class='attention-code'>Grid</span>: як він працює та як його використовувати</strong></p><p class='theme-text-container theme-text-container-code-comment'><span class='attention-code'>Grid</span> (сітка) - це механізм, який дозволяє розміщати елементи інтерфейсу у вигляді таблиці з рядками та стовпцями. Кожен елемент може займати одну або кілька клітинок сітки, що дозволяє створювати складні та організовані макети.</p><p class='theme-text-container theme-text-container-code-comment'><strong>Приклад використання <span class='attention-code'>Grid</span>:</strong></p><div class='code-pre-container'><pre><code class='language-xml'>&lt;Grid&gt;
+    &lt;Grid.ColumnDefinitions&gt;
+        &lt;ColumnDefinition Width="Auto" /&gt;
+        &lt;ColumnDefinition Width="*" /&gt;
+    &lt;/Grid.ColumnDefinitions&gt;
+    &lt;Grid.RowDefinitions&gt;
+        &lt;RowDefinition Height="Auto" /&gt;
+        &lt;RowDefinition Height="*" /&gt;
+    &lt;/Grid.RowDefinitions&gt;
+
+    &lt;TextBlock Grid.Column="0" Grid.Row="0" Text="Верхній лівий кут" /&gt;
+    &lt;TextBlock Grid.Column="1" Grid.Row="0" Text="Верхній правий кут" /&gt;
+    &lt;TextBlock Grid.Column="0" Grid.Row="1" Text="Нижній лівий кут" /&gt;
+    &lt;TextBlock Grid.Column="1" Grid.Row="1" Text="Нижній правий кут" /&gt;
+&lt;/Grid&gt;
+</code></pre></div><div class='theme-additional-html-content-container'><img src='images-theme/exemp0.png' class='theme-additional-img' alt=''></div><p class='theme-text-container theme-text-container-code-comment'>У цьому прикладі ми створюємо Grid з двома стовпцями та двома рядками. Кожен <code>TextBlock</code> розміщується в певній клітинці сітки за допомогою властивостей <code>Grid.Column</code> та <code>Grid.Row</code>.</p><p class='theme-text-container theme-text-container-code-comment'><strong><code><span class='attention-code'>Grid.ColumnDefinitions</span></code> та <code><span class='attention-code'>Grid.RowDefinitions</span></code>:</strong></p><div class='theme-additional-html-content-container'><ol class="theme-list"><li><p><code>&lt;Grid.ColumnDefinitions&gt;</code>: Цей тег вказує, які стовпці будуть у сітці. У цьому випадку визначаються два стовпці, обидва з яких мають ширину, що займає всі доступні простори (<code>Width="*"</code>). Це означає, що обидва стовпці будуть рівні за шириною.</p></li><li><p><code>&lt;Grid.RowDefinitions&gt;</code>: Цей тег вказує, які рядки будуть у сітці. У цьому випадку також визначаються два рядки, обидва з яких мають висоту, що займає всі доступні простори (<code>Height="*"</code>). Це означає, що обидва рядки будуть рівні за висотою.</p></li></ol></div><p class='theme-text-container theme-text-container-code-comment'>Ці визначення стовпців та рядків <code>Grid</code> встановлюють загальну структуру сітки, яка дозволяє розмістити елементи інтерфейсу у вікні вашого додатку Avalonia. Кожен елемент може потім бути розміщений у певній клітинці сітки, використовуючи властивості <code>Grid.Column</code> та <code>Grid.Row</code>.</p></div></div></div></div><div class='theme-main-container' align='center'><h1 class='theme-header'>Більше прикладів використання <span class='attention-code'>Grid</span></h1><p class='theme-text-container theme-text-container-info'><span class='attention-code'>Grid</span> - 2x2, 3x3.</p><div class='theme-additional-content-container-main'><button class='button-main theme-additional-content-expander'>Показати</button><div class='theme-additional-content-container collapsed'><div class='code-and-explanation-container'><p class='theme-text-container theme-text-container-code-comment'><span class='attention-highlight'><span class='attention-code'>Grid</span> 2x2:</span></p><div class='theme-additional-html-content-container'><img src='images-theme/exemp1.png' class='theme-additional-img' alt=''></div><div class='code-pre-container'><pre><code class='language-xml'>&lt;Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:avaltest.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        d:DesignWidth="800"
+        d:DesignHeight="450"
+        x:Class="avaltest.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="avaltest"&gt;
+    &lt;Design.DataContext&gt;
+        &lt;!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) --&gt;
+        &lt;vm:MainWindowViewModel /&gt;
+    &lt;/Design.DataContext&gt;
+    &lt;Grid Background="LightGray"&gt;
+        &lt;Grid.RowDefinitions&gt;
+            &lt;RowDefinition Height="*" /&gt;
+            &lt;RowDefinition Height="*" /&gt;
+        &lt;/Grid.RowDefinitions&gt;
+        &lt;Grid.ColumnDefinitions&gt;
+            &lt;ColumnDefinition Width="*" /&gt;
+            &lt;ColumnDefinition Width="*" /&gt;
+        &lt;/Grid.ColumnDefinitions&gt;
+        &lt;!-- Row 1, Column 1 --&gt;
+        &lt;TextBlock Grid.Row="0"
+                   Grid.Column="0"
+                   Text="1"
+                   Background="AliceBlue"
+                   Foreground="Black"
+                   FontSize="24" /&gt;
+        &lt;!-- Row 1, Column 2 --&gt;
+        &lt;TextBlock Grid.Row="0"
+                   Grid.Column="1"
+                   Text="2"
+                   Background="Beige"
+                   Foreground="Black"
+                   FontSize="24" /&gt;
+        &lt;!-- Row 2, Column 1 --&gt;
+        &lt;TextBlock Grid.Row="1"
+                   Grid.Column="0"
+                   Text="3"
+                   Background="DarkSalmon"
+                   Foreground="Black"
+                   FontSize="24" /&gt;
+        &lt;!-- Row 2, Column 2 --&gt;
+        &lt;TextBlock Grid.Row="1"
+                   Grid.Column="1"
+                   Text="4"
+                   Background="LightCoral"
+                   Foreground="Black"
+                   FontSize="24" /&gt;
+    &lt;/Grid&gt;
+&lt;/Window&gt;</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>У цьому прикладі ми використовуємо <span class='attention-code'>Grid</span> для створення таблиці з чотирма клітинками, розташованими у два рядки та два стовпці. Кожна клітинка містить елемент <span class='attention-code'>TextBlock</span> з числом від 1 до 4. <span class='attention-code'>Grid</span> використовує властивості <span class='attention-code'>Grid.RowDefinitions</span> та <span class='attention-code'>Grid.ColumnDefinitions</span> для визначення кількості та розміру рядків і стовпців в таблиці.</p><p class='theme-text-container theme-text-container-code-comment'><strong>Пояснення стилів <span class='attention-code'>TextBlock</span> (кольори та шрифт)</strong></p><div class='theme-additional-html-content-container'><ul class="theme-list"><li>Background (Фон): Властивість Background встановлює колір фону для TextBlock. Наприклад, Background="AliceBlue" встановлює світло-синій колір фону для першого TextBlock і Background="Beige" - бежевий для другого.</li><li>Foreground (Передній план): Властивість Foreground встановлює колір тексту у TextBlock. У всіх TextBlock текст встановлений чорним за допомогою Foreground="Black".</li><li>FontSize (Розмір шрифту): Властивість FontSize встановлює розмір шрифту у TextBlock. У всіх TextBlock розмір шрифту встановлений на 24 за допомогою FontSize="24".</li></ul></div><div class='theme-additional-html-content-container'><hr class='theme-line'></div><p class='theme-text-container theme-text-container-code-comment'><span class='attention-highlight'><span class='attention-code'>Grid</span> 3x3:</span></p><div class='theme-additional-html-content-container'><img src='images-theme/exemp2.png' class='theme-additional-img' alt=''></div><div class='code-pre-container'><pre><code class='language-xml'>&lt;Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:avaltest.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        d:DesignWidth="800"
+        d:DesignHeight="450"
+        x:Class="avaltest.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="avaltest"&gt;
+    &lt;Design.DataContext&gt;
+        &lt;!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) --&gt;
+        &lt;vm:MainWindowViewModel /&gt;
+    &lt;/Design.DataContext&gt;
+    &lt;Grid Background="LightGray"&gt;
+        &lt;Grid.RowDefinitions&gt;
+            &lt;RowDefinition Height="*" /&gt;
+            &lt;RowDefinition Height="*" /&gt;
+            &lt;RowDefinition Height="*" /&gt;
+        &lt;/Grid.RowDefinitions&gt;
+        &lt;Grid.ColumnDefinitions&gt;
+            &lt;ColumnDefinition Width="*" /&gt;
+            &lt;ColumnDefinition Width="*" /&gt;
+            &lt;ColumnDefinition Width="*" /&gt;
+        &lt;/Grid.ColumnDefinitions&gt;
+        &lt;!-- Row 1, Column 1 --&gt;
+        &lt;TextBlock Grid.Row="0"
+                   Grid.Column="0"
+                   Text="1"
+                   Background="AliceBlue"
+                   Foreground="Black"
+                   FontSize="24" /&gt;
+        &lt;!-- Row 1, Column 2 --&gt;
+        &lt;TextBlock Grid.Row="0"
+                   Grid.Column="1"
+                   Text="2"
+                   Background="Beige"
+                   Foreground="Black"
+                   FontSize="24" /&gt;
+        &lt;!-- Row 1, Column 3 --&gt;
+        &lt;TextBlock Grid.Row="0"
+                   Grid.Column="2"
+                   Text="3"
+                   Background="CadetBlue"
+                   Foreground="Black"
+                   FontSize="24" /&gt;
+        &lt;!-- Row 2, Column 1 --&gt;
+        &lt;TextBlock Grid.Row="1"
+                   Grid.Column="0"
+                   Text="4"
+                   Background="DarkSalmon"
+                   Foreground="Black"
+                   FontSize="24" /&gt;
+        &lt;!-- Row 2, Column 2 --&gt;
+        &lt;TextBlock Grid.Row="1"
+                   Grid.Column="1"
+                   Text="5"
+                   Background="LightCoral"
+                   Foreground="Black"
+                   FontSize="24" /&gt;
+        &lt;!-- Row 2, Column 3 --&gt;
+        &lt;TextBlock Grid.Row="1"
+                   Grid.Column="2"
+                   Text="6"
+                   Background="LightGreen"
+                   Foreground="Black"
+                   FontSize="24" /&gt;
+        &lt;!-- Row 3, Column 1 --&gt;
+        &lt;TextBlock Grid.Row="2"
+                   Grid.Column="0"
+                   Text="7"
+                   Background="LightPink"
+                   Foreground="Black"
+                   FontSize="24" /&gt;
+        &lt;!-- Row 3, Column 2 --&gt;
+        &lt;TextBlock Grid.Row="2"
+                   Grid.Column="1"
+                   Text="8"
+                   Background="LightSkyBlue"
+                   Foreground="Black"
+                   FontSize="24" /&gt;
+        &lt;!-- Row 3, Column 3 --&gt;
+        &lt;TextBlock Grid.Row="2"
+                   Grid.Column="2"
+                   Text="9"
+                   Background="LightSteelBlue"
+                   Foreground="Black"
+                   FontSize="24" /&gt;
+    &lt;/Grid&gt;
+&lt;/Window&gt;</code></pre></div><p class='theme-text-container theme-text-container-code-comment'>У цьому прикладі ми використовуємо <span class='attention-code'>Grid</span> для створення таблиці 3x3 з елементами <span class='attention-code'>TextBlock</span>, які мають різний фон та розмір шрифту. <span class='attention-code'>Grid</span> має три рядки та три стовпці, і кожен <span class='attention-code'>TextBlock</span> розміщений у відповідній клітинці сітки за допомогою властивостей <span class='attention-code'>Grid.Row</span> та <span class='attention-code'>Grid.Column</span>.</p><p class='theme-text-container theme-text-container-code-comment'><strong>Пояснення властивостей <span class='attention-code'>Grid</span></strong></p><div class='theme-additional-html-content-container'><ul class="theme-list"><li><code>Background="LightGray"</code>: Встановлює колір фону для всього Grid.</li><li><code>Grid.RowDefinitions</code>: Визначає кількість та розмір рядків у Grid. У цьому випадку у нас три рядки, кожен з яких має рівну висоту (<code>Height="*"</code>).</li><li><code>Grid.ColumnDefinitions</code>: Визначає кількість та розмір стовпців у Grid. У цьому випадку у нас три стовпці, кожен з яких має рівну ширину (<code>Width="*"</code>).</li></ul></div><p class='theme-text-container theme-text-container-code-comment'><strong>Пояснення стилів (кольорів та шрифту) <span class='attention-code'>TextBlock</span></strong></p><div class='theme-additional-html-content-container'><ul class="theme-list"><li><code>Background</code>: Встановлює колір фону TextBlock.</li><li><code>Foreground</code>: Встановлює колір тексту TextBlock.</li><li><code>FontSize</code>: Встановлює розмір шрифту тексту TextBlock.</li></ul></div></div></div></div></div><div class='theme-main-container' align='center'><h1 class='theme-header'>'Повноцінна' програма з використанням <span class='attention-code'>Grid</span></h1><p class='theme-text-container theme-text-container-info'><span class='attention-code'>Grid.ColumnSpan</span> та <span class='attention-code'>Grid.RowSpan</span>.</p><div class='theme-additional-content-container-main'><button class='button-main theme-additional-content-expander'>Показати</button><div class='theme-additional-content-container collapsed'><div class='code-and-explanation-container'><p class='theme-text-container theme-text-container-code-comment'><span class='attention-highlight'>Програма з базовим прикладом використання кнопок для вводу даних:</span></p><div class='theme-additional-html-content-container'><img src='images-theme/exemp3.png' class='theme-additional-img' alt=''></div><div class='code-pre-container'><p class='code-pre-title'>MainWindow.axaml:</p><pre><code class='language-xml'>&lt;Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:avaltest.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        d:DesignWidth="800"
+        d:DesignHeight="450"
+        x:Class="avaltest.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="avaltest"&gt;
+    &lt;Design.DataContext&gt;
+        &lt;!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) --&gt;
+        &lt;vm:MainWindowViewModel /&gt;
+    &lt;/Design.DataContext&gt;
+    &lt;Grid Background="LightGray"&gt;
+        &lt;Grid.RowDefinitions&gt;
+            &lt;RowDefinition Height="*" /&gt;
+            &lt;RowDefinition Height="*" /&gt;
+        &lt;/Grid.RowDefinitions&gt;
+        &lt;Grid.ColumnDefinitions&gt;
+            &lt;ColumnDefinition Width="*" /&gt;
+            &lt;ColumnDefinition Width="*" /&gt;
+            &lt;ColumnDefinition Width="*" /&gt;
+            &lt;ColumnDefinition Width="*" /&gt;
+        &lt;/Grid.ColumnDefinitions&gt;
+        &lt;!-- Row 1, Column 1 --&gt;
+        &lt;TextBlock Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="3"
+                   Text="1"
+                   Background="Red"
+                   Foreground="Black"
+                   FontSize="24"
+                   Name="TextBlock1" /&gt;
+        &lt;!-- Row 2, Column 1 --&gt;
+        &lt;Button Grid.Row="1"
+                Grid.Column="0"
+                Content="t"
+                Background="DarkSalmon"
+                Foreground="Black"
+                FontSize="24"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Click="Button_Click" /&gt;
+        &lt;!-- Row 2, Column 2 --&gt;
+        &lt;Button Grid.Row="1"
+                Grid.Column="1"
+                Content="e"
+                Background="LightCoral"
+                Foreground="Black"
+                FontSize="24"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Click="Button_Click" /&gt;
+        &lt;!-- Row 2, Column 3 --&gt;
+        &lt;Button Grid.Row="1"
+                Grid.Column="2"
+                Content="s"
+                Background="DarkSalmon"
+                Foreground="Black"
+                FontSize="24"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Click="Button_Click" /&gt;
+        &lt;!-- Row 2, Column 4 --&gt;
+        &lt;Button Grid.Row="0"
+                Grid.Column="3"
+                Grid.RowSpan="2"
+                Content="&gt;"
+                Background="LightCoral"
+                Foreground="Black"
+                FontSize="24"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Click="Button_Click" /&gt;
+    &lt;/Grid&gt;
+&lt;/Window&gt;</code></pre></div><div class='code-pre-container'><p class='code-pre-title'>MainWindow.axaml.cs:</p><pre><code class='language-cs'>using System;
+using Avalonia.Controls;
+using Avalonia.Interactivity;
+
+namespace avaltest.Views;
+
+public partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+        InitializeComponent();
+    }
+
+    private void Button_Click(object sender, RoutedEventArgs e)
+    {
+        if (sender is Button button)
+        {
+            Console.WriteLine($"Button clicked: {button.Content}");
+
+            if (button.Content == "&gt;")
+            {
+                TextBlock1.Text = TextBlock1.Text + " ";
+            }
+            else
+            {
+                TextBlock1.Text = TextBlock1.Text + button.Content;
+            }
+        }
+    }
+
+}</code></pre></div><p class='theme-text-container theme-text-container-code-comment'><strong>Структура програми та її ціль</strong></p><p class='theme-text-container theme-text-container-code-comment'>Коли користувач натискає на кнопку, її наповнення додається до текстового блоку. А кнопка "&gt;", коли на неї натиснуто, додає новий рядок до тексту.</p><p class='theme-text-container theme-text-container-code-comment'><strong><span class='attention-code'>Grid.ColumnSpan</span> та <span class='attention-code'>Grid.RowSpan</span></strong></p><p class='theme-text-container theme-text-container-code-comment'><span class='attention-code'>Grid.ColumnSpan</span> і <span class='attention-code'>Grid.RowSpan</span> - це властивості елементів сітки, які вказують, скільки стовпців або рядків вони повинні охоплювати. Наприклад, якщо <code><span class='attention-code'>Grid.ColumnSpan</span>="3"</code>, елемент буде охоплювати три стовпці.</p><p class='theme-text-container theme-text-container-code-comment'><strong>Пояснення роботи програми</strong></p><div class='theme-additional-html-content-container'><ol class="theme-list"><li>Коли користувач натискає на кнопку, викликається метод Button_Click.</li><li>Метод перевіряє, чи натиснутий об'єкт є кнопкою.</li><li>Якщо натиснута кнопка має вміст "&gt;", програма додає новий рядок до тексту в TextBlock1.</li><li>У протилежному випадку, програма додає вміст кнопки до тексту в TextBlock1.</li></ol></div><p class='theme-text-container theme-text-container-code-comment'><a class='theme-link' href='https://drive.google.com/drive/folders/1P3Q7QsAsg22VY1MWVL5ckR4ZMwJneY3g?usp=sharing'>Посилання на файли проєкту.</a></p></div></div></div></div></div><div id='templatemo_footer_wrapper'>    <div id='templatemo_footer'>Copyright © 2022 WebSkill - Всі права захищено.</div></div></body></html>
